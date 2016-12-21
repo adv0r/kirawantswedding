@@ -1,0 +1,48 @@
+body {
+  background-image: url("../img/kirawants.jpeg");
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+#pupilleft,
+#pupilright,
+#dogpupilleft,
+#dogpupilright {
+  position: relative;
+  background: #000000;
+  border-radius: 50%;
+}
+
+#dogeyeleft,
+#dogeyeright {
+  position: absolute;
+  background: rgba(134, 83, 79, 0.45);
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+
+#dogpupilleft {
+  width: 18px;
+  height: 18px;
+}
+
+#dogeyeleft
+{
+  width: 30px;
+  height: 30px;  
+  left: 400px; 
+  top: 511px;
+}
+
+#dogpupilright{
+  width: 18px;
+  height: 18px;
+}
+
+#dogeyeright {
+  width: 30px;
+  height: 30px;
+  left: 580px;
+  top: 539px;
+}
