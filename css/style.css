@@ -1,7 +1,12 @@
 body {
   background-image: url("../img/kirawants.jpeg");
   background-repeat: no-repeat;
-  background-color: white;
+  background-color: black;
+  background-position: center; 
+  background-attachment: fixed;
+  background-size: 80%;
+
+
 }
 
 #pupilleft,
@@ -23,26 +28,26 @@ body {
 
 
 #dogpupilleft {
-  width: 18px;
-  height: 18px;
+  width: 10px;
+  height: 10px;
 }
 
 #dogeyeleft
 {
-  width: 30px;
-  height: 30px;  
-  left: 400px; 
-  top: 511px;
+  width: 20px;
+  height: 20px;  
+  left: 37%; 
+  top: 30%;
 }
 
 #dogpupilright{
-  width: 18px;
-  height: 18px;
+  width: 10px;
+  height: 10px;
 }
 
 #dogeyeright {
-  width: 30px;
-  height: 30px;
-  left: 580px;
-  top: 539px;
+  width: 20px;
+  height: 20px;
+  left: 48.6%;
+  top: 32%;
 }
