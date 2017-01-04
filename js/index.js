@@ -57,7 +57,7 @@ var DrawEye = function(eyecontainer, pupil){
 };
 
 var onResize = function () {
-    r = $pupil.width()/2;
+    r = this.$pupil.width()/2;
     center = {
       x: $eyecontainer.width()/2 - r,
       y: $eyecontainer.height()/2 - r
