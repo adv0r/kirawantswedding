@@ -1,4 +1,6 @@
 // If you use this code, please link to this pen (cdpn.io/rkcjt). Thanks :)
+'use strict';
+
 var $pupil,
     xp,
     yp,
