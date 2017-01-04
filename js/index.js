@@ -4,7 +4,7 @@
 var DrawEye = function(eyecontainer, pupil){
   // Initialise core variables
   this.$pupil = $(pupil);
-  this.xp, this.yp;
+  this.xp = 0, this.yp = 0;
   this.r = this.$pupil.width()/2;
   this.$eyecontainer = $(eyecontainer);
   this.eyeposx = this.$eyecontainer.offset().left;
