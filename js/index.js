@@ -15,6 +15,7 @@ var DrawEye = function(eyecontainer, pupil){
     mouseX,
     mouseY;
   $pupil = $(pupil);
+  this.$pupil = $pupil;
   xp = 0, yp = 0;
   r = $pupil.width()/2;
   $eyecontainer = $(eyecontainer);
