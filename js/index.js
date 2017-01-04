@@ -65,6 +65,7 @@ var onResize = function () {
     distanceThreshold = $eyecontainer.width()/2 - r;
     eyeposx = $eyecontainer.offset().left;
     eyeposy = $eyecontainer.offset().top;
-}
+};
+
 var chihuahuaeye1 = new DrawEye("#dogeyeleft", "#dogpupilleft");
 var chihuahuaeye2 = new DrawEye("#dogeyeright", "#dogpupilright");
