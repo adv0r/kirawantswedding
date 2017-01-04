@@ -3,68 +3,56 @@
 
 var DrawEye = function(eyecontainer, pupil){
   // Initialise core variables
-  var $pupil,
-    xp,
-    yp,
-    r,
-    $eyecontainer,
-    eyeposx,
-    eyeposy,
-    center,
-    distanceThreshold,
-    mouseX,
-    mouseY;
-  $pupil = $(pupil);
-  this.$pupil = $pupil;
-  xp = 0, yp = 0;
-  r = $pupil.width()/2;
-  $eyecontainer = $(eyecontainer);
-  eyeposx = $eyecontainer.offset().left;
-  eyeposy = $eyecontainer.offset().top;
+  this.$pupil = $(pupil);
+  this.xp = 0, this.yp = 0;
+  this.r = this.$pupil.width()/2;
+  this.$eyecontainer = $(eyecontainer);
+  this.eyeposx = this.$eyecontainer.offset().left;
+  this.eyeposy = this.$eyecontainer.offset().top;
   
-  center = {
-    x: $eyecontainer.width()/2 - r,
-    y: $eyecontainer.height()/2 - r
+  this.center = {
+    x: this.$eyecontainer.width()/2 - r,
+    y: this.$eyecontainer.height()/2 - r
   };
-  distanceThreshold = $eyecontainer.width()/2 - r;
-  mouseX = 0;
-  mouseY = 0;
+  this.distanceThreshold = this.$eyecontainer.width()/2 - r;
+  this.mouseX = 0;
+  this.mouseY = 0;
 
   $(window).on('resize', onResize.bind(this));
   // Listen for mouse movement
   $(window).mousemove(function(e){
     var d = {
-      x: e.pageX - r - eyeposx - center.x,
-      y: e.pageY - r - eyeposy - center.y
+      x: e.pageX - this.r - this.eyeposx - this.center.x,
+      y: e.pageY - this.r - this.eyeposy - this.center.y
     };
     var distance = Math.sqrt(d.x*d.x + d.y*d.y);
-    if (distance < distanceThreshold) {
-      mouseX = e.pageX - eyeposx - r;
-      mouseY = e.pageY - eyeposy - r;
+    if (distance < this.distanceThreshold) {
+      this.mouseX = e.pageX - this.eyeposx - this.r;
+      this.mouseY = e.pageY - this.eyeposy - this.r;
     } else {
-      mouseX = d.x / distance * distanceThreshold + center.x;
-      mouseY = d.y / distance * distanceThreshold + center.y;
+      this.mouseX = d.x / distance * this.distanceThreshold + this.center.x;
+      this.mouseY = d.y / distance * this.distanceThreshold + this.center.y;
     }
   });
 
   // Update pupil location
   var loop = setInterval(function(){
     // change 1 to alter damping/momentum - higher is slower
-    xp += (mouseX - xp) / 1;
-    yp += (mouseY - yp) / 1;
-    $pupil.css({left:xp, top:yp});
+    this.xp += (this.mouseX - this.xp) / 1;
+    this.yp += (this.mouseY - this.yp) / 1;
+    this.$pupil.css({left:this.xp, top:this.yp});
   }, 1);
 };
 
 var onResize = function () {
-    r = this.$pupil.width()/2;
-    center = {
-      x: $eyecontainer.width()/2 - r,
-      y: $eyecontainer.height()/2 - r
+    this.r = this.$pupil.width()/2;
+    this.center = {
+      x: this.$eyecontainer.width()/2 - r,
+      y: this.$eyecontainer.height()/2 - r
     };
-    distanceThreshold = $eyecontainer.width()/2 - r;
-    eyeposx = $eyecontainer.offset().left;
-    eyeposy = $eyecontainer.offset().top;
+    this.distanceThreshold = this.$eyecontainer.width()/2 - r;
+    this.eyeposx = this.$eyecontainer.offset().left;
+    this.eyeposy = this.$eyecontainer.offset().top;
 };
 
 var chihuahuaeye1 = new DrawEye("#dogeyeleft", "#dogpupilleft");
