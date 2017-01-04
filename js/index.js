@@ -17,7 +17,7 @@ var DrawEye = function(eyecontainer, pupil){
   this.distanceThreshold = this.$eyecontainer.width()/2 - this.r;
   this.mouseX = 0;
   this.mouseY = 0;
-  $.proxy(onResize, this);
+  setTimeout($.proxy(onResize, this), 1);
   
   $(window).on('resize', onResize.bind(this));
   // Listen for mouse movement
@@ -46,6 +46,7 @@ var DrawEye = function(eyecontainer, pupil){
 };
 
 var onResize = function () {
+  console.log('res');
     this.r = this.$pupil.width()/2;
     this.center = {
       x: this.$eyecontainer.width()/2 - this.r,
