@@ -6,7 +6,8 @@ var DrawEye = function(eyecontainer, pupil, eyeposx, eyeposy){
   var xp = 0, yp = 0;
   var r = $pupil.width()/2;
   var $eyecontainer = $(eyecontainer);
-  console.log($eyecontainer.offset());
+  eyeposx = $eyecontainer.offset().left;
+  eyeposy = $eyecontainer.offset().top;
   
   var center = {
     x: $eyecontainer.width()/2 - r,
