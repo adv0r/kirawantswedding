@@ -56,5 +56,7 @@ var onResize = function () {
     this.eyeposy = this.$eyecontainer.offset().top;
 };
 
-var chihuahuaeye1 = new DrawEye("#dogeyeleft", "#dogpupilleft");
-var chihuahuaeye2 = new DrawEye("#dogeyeright", "#dogpupilright");
+$( document ).ready(function() {
+  var chihuahuaeye1 = new DrawEye("#dogeyeleft", "#dogpupilleft");
+  var chihuahuaeye2 = new DrawEye("#dogeyeright", "#dogpupilright");
+});
