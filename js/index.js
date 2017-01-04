@@ -11,10 +11,10 @@ var DrawEye = function(eyecontainer, pupil){
   this.eyeposy = this.$eyecontainer.offset().top;
   
   this.center = {
-    x: this.$eyecontainer.width()/2 - r,
-    y: this.$eyecontainer.height()/2 - r
+    x: this.$eyecontainer.width()/2 - this.r,
+    y: this.$eyecontainer.height()/2 - this.r
   };
-  this.distanceThreshold = this.$eyecontainer.width()/2 - r;
+  this.distanceThreshold = this.$eyecontainer.width()/2 - this.r;
   this.mouseX = 0;
   this.mouseY = 0;
 
@@ -47,10 +47,10 @@ var DrawEye = function(eyecontainer, pupil){
 var onResize = function () {
     this.r = this.$pupil.width()/2;
     this.center = {
-      x: this.$eyecontainer.width()/2 - r,
-      y: this.$eyecontainer.height()/2 - r
+      x: this.$eyecontainer.width()/2 - this.r,
+      y: this.$eyecontainer.height()/2 - this.r
     };
-    this.distanceThreshold = this.$eyecontainer.width()/2 - r;
+    this.distanceThreshold = this.$eyecontainer.width()/2 - this.r;
     this.eyeposx = this.$eyecontainer.offset().left;
     this.eyeposy = this.$eyecontainer.offset().top;
 };
