@@ -33,7 +33,7 @@ var DrawEye = function(eyecontainer, pupil){
       this.mouseX = d.x / distance * this.distanceThreshold + this.center.x;
       this.mouseY = d.y / distance * this.distanceThreshold + this.center.y;
     }
-  });
+  }.bind(this));
 
   // Update pupil location
   var loop = setInterval(function(){
