@@ -41,7 +41,7 @@ var DrawEye = function(eyecontainer, pupil){
     this.xp += (this.mouseX - this.xp) / 1;
     this.yp += (this.mouseY - this.yp) / 1;
     this.$pupil.css({left:this.xp, top:this.yp});
-  }, 1);
+  }.bind(this), 1);
 };
 
 var onResize = function () {
