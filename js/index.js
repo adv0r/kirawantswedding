@@ -1,31 +1,34 @@
 // If you use this code, please link to this pen (cdpn.io/rkcjt). Thanks :)
+var $pupil,
+    xp,
+    yp,
+    r,
+    $eyecontainer,
+    eyeposx,
+    eyeposy,
+    center,
+    distanceThreshold,
+    mouseX,
+    mouseY;
 
 var DrawEye = function(eyecontainer, pupil){
   // Initialise core variables
-  var $pupil = $(pupil);
-  var xp = 0, yp = 0;
-  var r = $pupil.width()/2;
-  var $eyecontainer = $(eyecontainer);
-  var eyeposx = $eyecontainer.offset().left;
-  var eyeposy = $eyecontainer.offset().top;
+  $pupil = $(pupil);
+  xp = 0, yp = 0;
+  r = $pupil.width()/2;
+  $eyecontainer = $(eyecontainer);
+  eyeposx = $eyecontainer.offset().left;
+  eyeposy = $eyecontainer.offset().top;
   
-  var center = {
+  center = {
     x: $eyecontainer.width()/2 - r,
     y: $eyecontainer.height()/2 - r
   };
-  var distanceThreshold = $eyecontainer.width()/2 - r;
-  var mouseX = 0, mouseY = 0;
+  distanceThreshold = $eyecontainer.width()/2 - r;
+  mouseX = 0;
+  mouseY = 0;
 
-  $(window).on('resize', function () {
-    r = $pupil.width()/2;
-    center = {
-      x: $eyecontainer.width()/2 - r,
-      y: $eyecontainer.height()/2 - r
-    };
-    distanceThreshold = $eyecontainer.width()/2 - r;
-    eyeposx = $eyecontainer.offset().left;
-    eyeposy = $eyecontainer.offset().top;
-  });
+  $(window).on('resize', onResize);
   // Listen for mouse movement
   $(window).mousemove(function(e){
     var d = {
@@ -51,5 +54,15 @@ var DrawEye = function(eyecontainer, pupil){
   }, 1);
 };
 
+var onResize = function () {
+    r = $pupil.width()/2;
+    center = {
+      x: $eyecontainer.width()/2 - r,
+      y: $eyecontainer.height()/2 - r
+    };
+    distanceThreshold = $eyecontainer.width()/2 - r;
+    eyeposx = $eyecontainer.offset().left;
+    eyeposy = $eyecontainer.offset().top;
+}
 var chihuahuaeye1 = new DrawEye("#dogeyeleft", "#dogpupilleft");
 var chihuahuaeye2 = new DrawEye("#dogeyeright", "#dogpupilright");
