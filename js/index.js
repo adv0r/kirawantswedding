@@ -59,4 +59,6 @@ var onResize = function () {
 $( document ).ready(function() {
   var chihuahuaeye1 = new DrawEye("#dogeyeleft", "#dogpupilleft");
   var chihuahuaeye2 = new DrawEye("#dogeyeright", "#dogpupilright");
+
+  //TODO here add code to check mobile 
 });
