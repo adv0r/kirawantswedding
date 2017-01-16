@@ -6,8 +6,9 @@ function passWord() {
 		if (!pass1) 
 			history.go(-1);
 		if (isCodeValid(pass1)) {
-			alert('Bau bau ' + codeTable[pass1.toUpperCase()]);
-			window.location.href = 'kira.htm';
+			$("#secretdiv").css("visibility", "visible");
+			$("#enterpass").css("display", "none"); 
+			$("#customtext").text(codeTable[pass1.toUpperCase()]);
 			break;
 			} 
 		attemptCount+=1;
@@ -34,5 +35,5 @@ function isCodeValid(code){
 var codeTable =  {
 	PASSWORD: 'welcome', 
 	ADMIN: 'cazzone', 
-	ASPIRAPOLVERE: 'FEDE'
+	ASPIRA: 'FEDE'
 };

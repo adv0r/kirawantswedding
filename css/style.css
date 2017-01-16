@@ -53,6 +53,10 @@ body {
   min-height: 100vh;
 }
 
+#secretdiv {
+  visibility: hidden;
+
+}
 .img {
   display: flex;
   justify-content: center;
@@ -107,4 +111,9 @@ body {
   height: 1.5vh;
   min-width: 4px;
   min-height: 4px;
+}
+
+
+.welcome {
+  color: white;
 }
