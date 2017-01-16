@@ -8,7 +8,14 @@ function passWord() {
 		if (isCodeValid(pass1)) {
 			$("#secretdiv").css("visibility", "visible");
 			$("#enterpass").css("display", "none"); 
-			$("#customtext").text(codeTable[pass1.toUpperCase()]);
+			$("#customtext").text(codeTable[pass1.toUpperCase()][0]);
+			if(codeTable[pass1.toUpperCase()][1]=='ita'){
+				$("#welcome-text-ita").css("display", "block"); 
+				$("#signup-text-ita").css("display", "block"); 
+			} else if(codeTable[pass1.toUpperCase()][1]=='esp'){
+				$("#signup-text-esp").css("display", "block"); 
+				$("#welcome-text-esp").css("display", "block"); 
+			} 
 			break;
 			} 
 		attemptCount+=1;
@@ -31,9 +38,8 @@ function isCodeValid(code){
 	return found;
 }
 
-
+//Design :  key is the invitation code, codeTable[key][0] il nome degli invitati, , codeTable[key][1] la lingua
 var codeTable =  {
-	PASSWORD: 'welcome', 
-	ADMIN: 'cazzone', 
-	ASPIRA: 'FEDE'
+	ADMIN: ['cazzone','esp'], 
+	ASPIRA: ['FEDE','ita']
 };

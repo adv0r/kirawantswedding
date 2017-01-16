@@ -55,7 +55,6 @@ body {
 
 #secretdiv {
   visibility: hidden;
-
 }
 .img {
   display: flex;
@@ -113,7 +112,12 @@ body {
   min-height: 4px;
 }
 
+#signup-text-ita,#welcome-text-ita, #signup-text-esp, #welcome-text-esp {
+  color: white;
+  display: none;
+}
 
 .welcome {
   color: white;
+  font-size: 16px; font-size: 4vw;
 }

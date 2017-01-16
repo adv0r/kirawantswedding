@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	  <meta charset="UTF-8">
-	   <title>Kira Wants Wedding!</title>
-	  <link rel="stylesheet" href="css/style.css">
+	  	<meta charset="UTF-8">
+	  	<title>Kira Wants Wedding!</title>
+	  	<link rel="stylesheet" href="css/style.css">
 
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.13/webcomponents-lite.min.js"></script>
-  	<link rel="import" href="https://components.cloudstitch.com/cloudstitch-handlebars.html" />
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.13/webcomponents-lite.min.js"></script>
+  		<link rel="import" href="https://components.cloudstitch.com/cloudstitch-handlebars.html" />
 
 	</head>
 
@@ -23,7 +23,8 @@
  		<div id="secretdiv">
 			<div id="welcometext">
 				<center>
-					<p class="welcome"> Hey <span id="customtext" >customname</span>, welcome here</p>
+					<p id="welcome-text-ita" class="welcome"> Ciao <span id="customtext" >customname</span>, benvenuto qui</p>
+					<p id="welcome-text-esp" class="welcome"> Hola <span id="customtext" >customname</span>, bienvenido aqui</p>
 				</center>
 			</div>
 
@@ -42,11 +43,12 @@
 
 
 		  	<div id="signup">
-		  		<cloudstitch-handlebars user="advanced" app="kirawantswedding-signup"></cloudstitch-handlebars>
-
+		  		<center>
+			  		<p id="signup-text-ita">Inserisci gli indirizzi email degli invitati</p>
+			  		<p id="signup-text-esp">Pon las direcciones de correos</p>
+			  		<cloudstitch-handlebars user="advanced" app="kirawantswedding-signup"></cloudstitch-handlebars>
+		  		</center>
 			</div>
-
-
 		</div>
 
 
