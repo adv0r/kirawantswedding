@@ -24,14 +24,13 @@ function init(){
 function deviceOrientationHandler(tiltLR, tiltFB, dir){
 	document.getElementById("doTiltLR").innerHTML = Math.round(tiltLR);
 	document.getElementById("doTiltFB").innerHTML = Math.round(tiltFB);
-	document.getElementById("doDirection").innerHTML = Math.round(dir);
 
-	// Apply the transform to the image
-	var logo = document.getElementById("imgLogo");
-	logo.style.webkitTransform =
-	  "rotate("+ tiltLR +"deg) rotate3d(1,0,0, "+ (tiltFB*-1)+"deg)";
-	logo.style.MozTransform = "rotate("+ tiltLR +"deg)";
-	logo.style.transform =
-	  "rotate("+ tiltLR +"deg) rotate3d(1,0,0, "+ (tiltFB*-1)+"deg)";
+	// Parameters below only work in portait mode!!! 
+
+	// Occhi In posizione centrale  tiltLR : 0 , tiltFB : 50
+	// Occhi max a destra : tiltLR > 40
+	// Occhi max a sinistra : tiltLR < -40
+	// Occhi in alto : tiltFB > 80
+	// Occhi in basso : tiltFB < 25
 
 }
