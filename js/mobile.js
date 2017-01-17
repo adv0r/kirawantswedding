@@ -1,6 +1,6 @@
 var lastAppliedTilt = 0;
 var minTilt = 6;
-var maxAlpha = 60;
+var maxAlpha = 90;
 
 
 $( document ).ready(function() {
@@ -43,7 +43,7 @@ function deviceOrientationHandler(tiltLR, tiltFB, dir){
 
 			$("#dogeyeleft").hide();
 			$("#dogeyeright").hide();
-			
+
 			lastAppliedTilt = tiltLR;
 			tiltLR = tiltLR/2; //reduce rotation
 			var logo = document.getElementById("rotatingImg");
