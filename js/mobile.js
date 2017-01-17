@@ -1,7 +1,7 @@
 var lastAppliedTilt = 0;
 var minTilt = 6;
 var maxAlpha = 60;
-function init(){
+function initMobile(){
 	if (window.DeviceOrientationEvent) {
 	  //document.getElementById("doEvent").innerHTML = "DeviceOrientation";
 	  // Listen for the deviceorientation event and handle the raw data

@@ -61,4 +61,6 @@ $( document ).ready(function() {
   var chihuahuaeye2 = new DrawEye("#dogeyeright", "#dogpupilright");
 
   //TODO here add code to check mobile 
+
+  initMobile();
 });
