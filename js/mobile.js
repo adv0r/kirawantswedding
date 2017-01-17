@@ -1,5 +1,5 @@
 var lastAppliedTilt = 0;
-var treshold = 10;
+var minTilt = 10;
 function init(){
 	if (window.DeviceOrientationEvent) {
 	  document.getElementById("doEvent").innerHTML = "DeviceOrientation";
@@ -30,7 +30,7 @@ function deviceOrientationHandler(tiltLR, tiltFB, dir){
 	document.getElementById("doDirection").innerHTML = Math.round(lastAppliedTilt);
 
 
-	if(Math.abs(lastAppliedTilt - tiltLR)>threshold) {
+	if(Math.abs(lastAppliedTilt - tiltLR)>minTilt) {
 		lastAppliedTilt = tiltLR;
 		var logo = document.getElementById("imgLogo");
 		logo.style.webkitTransform =
