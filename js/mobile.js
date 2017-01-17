@@ -1,6 +1,13 @@
 var lastAppliedTilt = 0;
 var minTilt = 6;
 var maxAlpha = 60;
+
+
+$( document ).ready(function() {
+  initMobile();
+});
+
+
 function initMobile(){
 	if (window.DeviceOrientationEvent) {
 	  //document.getElementById("doEvent").innerHTML = "DeviceOrientation";
