@@ -35,7 +35,7 @@ function deviceOrientationHandler(tiltLR, tiltFB, dir){
 		if(tiltLR > -60 && tiltLR < 60){
 			lastAppliedTilt = tiltLR;
 			tiltLR = tiltLR/2; //reduce rotation
-			var logo = document.getElementById("imgLogo");
+			var logo = document.getElementById("rotatingImg");
 			logo.style.webkitTransform =
 			  "rotate("+ tiltLR +"deg) rotate3d(1,0,0, "+ (tiltFB*-1)+"deg)";
 			logo.style.MozTransform = "rotate("+ tiltLR +"deg)";
