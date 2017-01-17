@@ -1,6 +1,5 @@
 function init(){
 	if (window.DeviceOrientationEvent) {
-		document.getElementById("doEvent").innerHTML = "DeviceOrientation";
 		// Listen for the deviceorientation event and handle the raw data
 		window.addEventListener('deviceorientation', function(eventData) {
 		// gamma is the left-to-right tilt in degrees, where right is positive
