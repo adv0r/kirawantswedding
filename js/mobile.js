@@ -1,5 +1,5 @@
 var lastAppliedTilt = 0;
-var minTilt = 10;
+var minTilt = 6;
 function init(){
 	if (window.DeviceOrientationEvent) {
 	  document.getElementById("doEvent").innerHTML = "DeviceOrientation";
