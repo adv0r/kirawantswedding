@@ -40,6 +40,10 @@ function deviceOrientationHandler(tiltLR, tiltFB, dir){
 
 	if(Math.abs(lastAppliedTilt - tiltLR)>minTilt) {
 		if(tiltLR > -60 && tiltLR < 60){
+
+			$("#dogeyeleft").hide();
+			$("#dogeyeright").hide();
+			
 			lastAppliedTilt = tiltLR;
 			tiltLR = tiltLR/2; //reduce rotation
 			var logo = document.getElementById("rotatingImg");
