@@ -1,3 +1,5 @@
+var lastAppliedTilt = 0;
+var treshold = 10;
 function init(){
 	if (window.DeviceOrientationEvent) {
 	  document.getElementById("doEvent").innerHTML = "DeviceOrientation";
@@ -25,15 +27,21 @@ function deviceOrientationHandler(tiltLR, tiltFB, dir){
 	document.getElementById("doTiltLR").innerHTML = Math.round(tiltLR);
 	document.getElementById("doTiltFB").innerHTML = Math.round(tiltFB);
 
-	document.getElementById("doDirection").innerHTML = Math.round(dir);
+	document.getElementById("doDirection").innerHTML = Math.round(lastAppliedTilt);
 
+
+	if(Math.abs(lastAppliedTilt - tiltLR)>threshold) {
+		lastAppliedTilt = tiltLR;
+		var logo = document.getElementById("imgLogo");
+		logo.style.webkitTransform =
+		  "rotate("+ tiltLR +"deg) rotate3d(1,0,0, "+ (tiltFB*-1)+"deg)";
+		logo.style.MozTransform = "rotate("+ tiltLR +"deg)";
+		logo.style.transform =
+		  "rotate("+ tiltLR +"deg) rotate3d(1,0,0, "+ (tiltFB*-1)+"deg)";
+
+	}
 	// Apply the transform to the image
-	var logo = document.getElementById("imgLogo");
-	logo.style.webkitTransform =
-	  "rotate("+ tiltLR +"deg) rotate3d(1,0,0, "+ (tiltFB*-1)+"deg)";
-	logo.style.MozTransform = "rotate("+ tiltLR +"deg)";
-	logo.style.transform =
-	  "rotate("+ tiltLR +"deg) rotate3d(1,0,0, "+ (tiltFB*-1)+"deg)";
+
 
 	// Parameters below only work in portait mode!!! 
 
