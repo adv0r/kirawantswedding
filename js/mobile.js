@@ -3,7 +3,7 @@ var minTilt = 6;
 var maxAlpha = 60;
 function init(){
 	if (window.DeviceOrientationEvent) {
-	  document.getElementById("doEvent").innerHTML = "DeviceOrientation";
+	  //document.getElementById("doEvent").innerHTML = "DeviceOrientation";
 	  // Listen for the deviceorientation event and handle the raw data
 	  window.addEventListener('deviceorientation', function(eventData) {
 	    // gamma is the left-to-right tilt in degrees, where right is positive
@@ -19,16 +19,16 @@ function init(){
 	    deviceOrientationHandler(tiltLR, 0, dir);
 	  }, false);
 	} else {
-	  document.getElementById("doEvent").innerHTML = "Not supported."
+	  //document.getElementById("doEvent").innerHTML = "Not supported."
 	}
 }
 
 
 function deviceOrientationHandler(tiltLR, tiltFB, dir){
-	document.getElementById("doTiltLR").innerHTML = Math.round(tiltLR);
-	document.getElementById("doTiltFB").innerHTML = Math.round(tiltFB);
+	//document.getElementById("doTiltLR").innerHTML = Math.round(tiltLR);
+	//document.getElementById("doTiltFB").innerHTML = Math.round(tiltFB);
 
-	document.getElementById("doDirection").innerHTML = Math.round(lastAppliedTilt);
+	//document.getElementById("doDirection").innerHTML = Math.round(lastAppliedTilt);
 
 
 	if(Math.abs(lastAppliedTilt - tiltLR)>minTilt) {
