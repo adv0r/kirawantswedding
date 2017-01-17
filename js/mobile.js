@@ -1,5 +1,6 @@
 var lastAppliedTilt = 0;
 var minTilt = 6;
+var maxAlpha = 60;
 function init(){
 	if (window.DeviceOrientationEvent) {
 	  document.getElementById("doEvent").innerHTML = "DeviceOrientation";
@@ -31,14 +32,16 @@ function deviceOrientationHandler(tiltLR, tiltFB, dir){
 
 
 	if(Math.abs(lastAppliedTilt - tiltLR)>minTilt) {
-		lastAppliedTilt = tiltLR;
-		tiltLR = tiltLR/2; //reduce rotation
-		var logo = document.getElementById("imgLogo");
-		logo.style.webkitTransform =
-		  "rotate("+ tiltLR +"deg) rotate3d(1,0,0, "+ (tiltFB*-1)+"deg)";
-		logo.style.MozTransform = "rotate("+ tiltLR +"deg)";
-		logo.style.transform =
-		  "rotate("+ tiltLR +"deg) rotate3d(1,0,0, "+ (tiltFB*-1)+"deg)";
+		if(tiltLR > -60 && tiltLR < 60){
+			lastAppliedTilt = tiltLR;
+			tiltLR = tiltLR/2; //reduce rotation
+			var logo = document.getElementById("imgLogo");
+			logo.style.webkitTransform =
+			  "rotate("+ tiltLR +"deg) rotate3d(1,0,0, "+ (tiltFB*-1)+"deg)";
+			logo.style.MozTransform = "rotate("+ tiltLR +"deg)";
+			logo.style.transform =
+			  "rotate("+ tiltLR +"deg) rotate3d(1,0,0, "+ (tiltFB*-1)+"deg)";
+		  }
 
 	}
 	// Apply the transform to the image
