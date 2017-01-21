@@ -1,30 +1,39 @@
-function passWord() {
-	var attemptCount = 1;
-	var maxAttempts = 5;
-	var pass1 = prompt('Please Enter Your Invitation Code',' ');
-	while (attemptCount < maxAttempts) {
-		if (!pass1) 
-			history.go(-1);
-		if (isCodeValid(pass1)) {
-			$("#secretdiv").css("visibility", "visible");
-			$("#enterpass").css("display", "none"); 
-			$("#customtext").text(codeTable[pass1.toUpperCase()][0]);
-			if(codeTable[pass1.toUpperCase()][1]=='ita'){
-				$("#welcome-text-ita").css("display", "block"); 
-				$("#signup-text-ita").css("display", "block"); 
-			} else if(codeTable[pass1.toUpperCase()][1]=='esp'){
-				$("#signup-text-esp").css("display", "block"); 
-				$("#welcome-text-esp").css("display", "block"); 
-			} 
-			break;
-			} 
-		attemptCount+=1;
-		var pass1 = prompt('Nope.','Invitation Code');
+function checkPass(){
+	var pass1 = $("#personalcodeinput").val();
+	console.log("Checking invitation code "+pass1);
+	if (!pass1) {
+		shakeit();
+	}
+	if (isCodeValid(pass1)) {
+		$("#secretdiv").css("visibility", "visible");
+		$("#enterpass").css("display", "none"); 
+		$("#customtext").text(codeTable[pass1.toUpperCase()][0]);
+		if(codeTable[pass1.toUpperCase()][1]=='ita'){
+			$("#welcome-text-ita").css("display", "block"); 
+			$("#signup-text-ita").css("display", "block"); 
+		} 
+		else if(codeTable[pass1.toUpperCase()][1]=='esp'){
+			$("#signup-text-esp").css("display", "block"); 
+			$("#welcome-text-esp").css("display", "block"); 
 		}
-	if (attemptCount == maxAttempts) 
-		history.go(-1);
-	return " ";
-} 
+	} 
+	else {
+		shakeit();
+	}	
+}
+
+function shakeit(){
+	console.log("Nope!");
+	var shakeoptions = {  distance: 40, times: 2 };
+	$("#enterpass").effect("shake",shakeoptions);
+}
+
+document.querySelector('#personalcodeinput').addEventListener('keypress', function (e) {
+    var key = e.which || e.keyCode;
+    if (key === 13) { // 13 is enter
+      checkPass();
+    }
+});
 
 
 function isCodeValid(code){

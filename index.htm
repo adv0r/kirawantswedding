@@ -4,18 +4,34 @@
 	  	<meta charset="UTF-8">
 	  	<title>Kira Wants Wedding!</title>
 	  	<link rel="stylesheet" href="css/style.css">
+	  	
+	  	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+	  	<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.13/webcomponents-lite.min.js"></script>
   		<link rel="import" href="https://components.cloudstitch.com/cloudstitch-handlebars.html" />
+
 
 	</head>
 
 	<body>
 		<div id="enterpass">
 			<center>
-				<form>
-					<input type="button" value="Kira Wants Invitation Code" onClick="javascript:passWord()">
-				</form>
+				<h1>Kira Wants Wedding</h1>
+				<p>24th of june @ bcn</p>
+				<p>To find out more insert your invitation code</p>
+
+				<div class="input-group input-group-lg col-xs-6" d="personalcodediv">
+			      <input type="text" id="personalcodeinput" class="form-control" placeholder="PERSONAL INVITATION CODE" autofocus>
+			      <span class="input-group-btn">
+			        <button class="btn btn-default" type="button" onclick="javascript:checkPass()">Find out more!</button>
+			      </span>
+			    </div>
 			</center>
 	  	</div>
 
@@ -51,10 +67,14 @@
 			</div>
 		</div>
 
-
+		<center>
+				<p>info@kirawants.wedding</p>
+		</center>
 
 
   	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
   	<script src="js/index.js"></script>
 	<script src="js/pass.js"></script>
 	<script src="js/mobile.js"></script>
