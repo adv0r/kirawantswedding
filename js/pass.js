@@ -19,6 +19,7 @@ function checkPass(){
 		if(codeTable[pass1.toUpperCase()][1]=='ita'){
 			$("#welcome-text").html("<p id='welcome-text' class='welcome'> Ciao <span id='customtext'> </span>, benvenuto qui</p>"); 
 			$("#signup-text-ita").css("display", "block"); 
+			$("#signup-text-esp").css("display", "none"); 
 
 			$("#modaltitle").text("Grazie!");
 			$("#modalbody").text("Fatto! Grazie mille, Nico E Gemma saranno contenti di averti. Ti mandero presto un email di conferma con piu dettagli. Se pensi di doverci lasciare altri indirizzi email con cui comunicare, fai pure!");
@@ -26,6 +27,8 @@ function checkPass(){
 		} 
 		else if(codeTable[pass1.toUpperCase()][1]=='esp'){
 			$("#signup-text-esp").css("display", "block"); 
+			$("#signup-text-ita").css("display", "none"); 
+
 			$("#welcome-text").html("<p id='welcome-text' class='welcome'> Hola <span id='customtext'> </span>, bienvenudo aqui!</p>"); 
 
 			$("#modaltitle").text("Gracias!");
@@ -33,7 +36,7 @@ function checkPass(){
 
 		}
 
-		$("#customtext").text(codeTable[pass1.toUpperCase()][0]);
+			$("#customtext").text(codeTable[pass1.toUpperCase()][0]);
 
 		if(codeTable[pass1.toUpperCase()][2]=='single'){
 			//TODO
