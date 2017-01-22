@@ -5,7 +5,6 @@ function checkPass(){
 		shakeit();
 	}
 	if (isCodeValid(pass1)) {
-
 		if(pass1.toUpperCase() === "WEEKENDTHERAPISTS"){
 			//Play helicopter for edurne y edgar
 		 	var helicopterAudio = new Audio('audio/helicopter.mp3');

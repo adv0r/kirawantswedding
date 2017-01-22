@@ -34,7 +34,7 @@ $( document ).ready(function() {
         //window.speechSynthesis.speak(msg);
     }
     else {
-           $('#sunbtn').prop('disabled', true);
+          $('#sunbtn').prop('disabled', true);
     }
   };
 
