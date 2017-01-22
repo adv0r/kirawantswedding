@@ -9,8 +9,9 @@ function checkPass(){
 		$("#enterpass").css("display", "none"); 
 		$("#guestsinput").focus();
 		setTimeout(function(){
-			    var pulsateoptions = { times: 8 };
-				 $("#signup").toggle("Pulsate",pulsateoptions);}
+			    var shakeoptions = {  distance: 80, times: 1 };
+				$("#signup").effect("shake",shakeoptions);
+				}
 		 	, 3000);
 		$("#customtext").text(codeTable[pass1.toUpperCase()][0]);
 		if(codeTable[pass1.toUpperCase()][1]=='ita'){
