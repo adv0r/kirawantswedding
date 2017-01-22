@@ -86,20 +86,3 @@ function isCodeValid(code){
 	}
 	return found;
 }
-
-//Design :  key is the invitation code, codeTable[key][0] il nome degli invitati, , codeTable[key][1] la lingua
-var codeTable =  {
-	TEST: ['admin','esp','single'], 
-	ASPIRA: ['Federica','ita','multi'],
-	GOCCIADILUNA : [	'Mamma Rosanna'	, 'ita' ,	'female' ],
-UNGIRETTODIPAPPETTE : [	'Gilby'	, 'ita' ,	'male' ],
-SASISASISASISU : [	'Flaminia e Valerio'	, 'ita' ,	'multi' ],
-NONNATECNOLOGICA : [	'Nonnna Brunella'	, 'ita' ,	'female' ],
-QUOVADIS : [	'Zio Alesandro e Zia Patrizia'	, 'ita' ,	'multi' ],
-LARGOCAPUCCI : [	'Zio Fabrizio, Zia Iliana e Giorgia '	, 'ita' ,	'multi' ],
-SUPERCUGGI : [	'Giulia e Guglielmo'	, 'ita' ,	'multi' ],
-SUPERKIKKA : [	'Zia Francesca e Ale'	, 'ita' ,	'multi' ],
-PORTOSANTOSTEFANO : [	'Zia Diana e Zio Nicola'	, 'ita' ,	'multi' ],
-ZIACARMEN : [	'Zia Carmen'	, 'ita' ,	'female' ],
-SPETZLECONRAFANO : [	'Zio Rolando e Zia Carmen'	, 'ita' ,	'multi' ]
-};
