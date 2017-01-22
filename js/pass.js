@@ -64,6 +64,6 @@ function isCodeValid(code){
 
 //Design :  key is the invitation code, codeTable[key][0] il nome degli invitati, , codeTable[key][1] la lingua
 var codeTable =  {
-	ADMIN: ['cazzone','esp','single'], 
+	TEST: ['admin','esp','single'], 
 	ASPIRA: ['FEDE','ita','multi']
 };
