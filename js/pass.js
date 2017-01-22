@@ -8,7 +8,10 @@ function checkPass(){
 		$("#secretdiv").css("visibility", "visible");
 		$("#enterpass").css("display", "none"); 
 		$("#guestsinput").focus();
-		setTimeout(function(){ $("#signup").effect("Pulsate");}, 3000);
+		setTimeout(function(){
+			    var pulsateoptions = { times: 8 };
+				 $("#signup").toggle("Pulsate",pulsateoptions);}
+		 	, 3000);
 		$("#customtext").text(codeTable[pass1.toUpperCase()][0]);
 		if(codeTable[pass1.toUpperCase()][1]=='ita'){
 			$("#welcome-text-ita").css("display", "block"); 
