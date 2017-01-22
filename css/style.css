@@ -113,7 +113,7 @@ body {
   min-height: 4px;
 }
 
-#signup-text-ita, #signup-text-esp, {
+#signup-text-ita, #signup-text-esp, #signup-text-cat,  {
   color: white;
   display: none;
 }
