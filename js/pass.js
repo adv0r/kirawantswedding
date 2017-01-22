@@ -1,3 +1,4 @@
+var mysecretvar = "daverO=!!?!?";
 function checkPass(){
 	var pass1 = $("#personalcodeinput").val();
 	console.log("Checking invitation code "+pass1);
@@ -9,10 +10,10 @@ function checkPass(){
 		$("#enterpass").css("display", "none"); 
 		$("#guestsinput").focus();
 		setTimeout(function(){
-			    var shakeoptions = {  distance: 80, times: 1 };
+			    var shakeoptions = {  distance: 60, times: 1 };
 				$("#signup").effect("shake",shakeoptions);
 				}
-		 	, 3000);
+		 	, 5000);
 		$("#customtext").text(codeTable[pass1.toUpperCase()][0]);
 		if(codeTable[pass1.toUpperCase()][1]=='ita'){
 			$("#welcome-text-ita").css("display", "block"); 
