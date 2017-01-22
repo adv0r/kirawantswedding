@@ -3,33 +3,37 @@
 	<head>
 	  	<meta charset="UTF-8">
 	  	<title>Kira Wants Wedding!</title>
+
+	  	<!-- Custom CSS -->
 	  	<link rel="stylesheet" href="css/style.css">
 	  	
+
+	  	<!-- jQuery UI for shake -->
 	  	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 
-
+	  	<!-- jQuery -->
 		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-	  	<!-- Latest compiled and minified CSS -->
+	  	<!-- Bootstrap -->
+
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+	  	<!-- CloudStitch -->
 	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.13/webcomponents-lite.min.js"></script>
   		<link rel="import" href="https://components.cloudstitch.com/cloudstitch-handlebars.html" />
-
 
 	</head>
 
 	<body>
+
+		<!-- Enter Invitation Code  ________________________ -->
 		<div id="enterpass">
 			<center>
-				<h1>Kira Wants Wedding</h1>
-				<p>24th of june @ bcn</p>
+
 				<p>To find out more insert your invitation code</p>
 
 				<div class="input-group input-group-lg col-xs-6" id="personalcodediv">
@@ -41,8 +45,10 @@
 			</center>
 	  	</div>
 
-
+		<!-- Enter SecretDiv  ________________________ -->
  		<div id="secretdiv">
+
+			<!-- Welcome text ________________________ -->
 			<div id="welcometext">
 				<center>
 					<p id="welcome-text" class="welcome"></p>
@@ -50,6 +56,7 @@
 			</div>
 
 
+			<!-- Kira Image ________________________ -->
 			<div class="img" id="kiraimg">
 			    <div class="img-container">
 			      <img src="img/kirawants.jpeg" alt="" id="rotatingImg">
@@ -63,6 +70,7 @@
 		  	</div>
 
 
+			<!-- Sign-up ________________________ -->
 		  	<div id="signup">
 		  		<center>
 			  		<p id="signup-text-ita">Inserisci gli indirizzi email degli invitati</p>
@@ -74,15 +82,17 @@
 			</div>
 		</div>
 
-	<footer class="footer">
-	<center>
-	      <div class="container">
-	        <p class="text-muted">Designed and maintained by Kira Entertainment Corp. - &reg; 2017 -  <a href="mailto:info@kirawants.wedding">info@kirawants.wedding</a></p>
-	      </div>
-      </center>
-    </footer>
+		<!-- Footer ________________________ -->
+		<footer class="footer">
+		<center>
+		      <div class="container">
+		        <p class="text-muted">Designed and maintained by Kira Entertainment Corp. - &reg; 2017 -  <a href="mailto:info@kirawants.wedding">info@kirawants.wedding</a></p>
+		      </div>
+	      </center>
+	    </footer>
 
-		<!-- Modal -->
+
+		<!-- Modal Pop-up -->
 		  <div class="modal fade" id="myModal" role="dialog">
 		    <div class="modal-dialog modal-lg">
 		      <div class="modal-content">
