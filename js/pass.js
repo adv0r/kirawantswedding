@@ -21,6 +21,7 @@ function checkPass(){
 				$("#signup").effect("shake",shakeoptions);
 				}
 		 	, 4000);
+
 		if(codeTable[pass1.toUpperCase()][1]=='ita'){
 			if(codeTable[pass1.toUpperCase()][2]=='male'){
 			   $("#welcome-text").html("<p id='welcome-text' class='welcome'>Ciao <span id='customtext'> </span>, vuoi condividere con me questo giorno speciale per Gemma e Nico?</p>"); 
@@ -34,11 +35,11 @@ function checkPass(){
 			else if(codeTable[pass1.toUpperCase()][2]=='multi'){
 			   $("#welcome-text").html("<p id='welcome-text' class='welcome'>Ciao <span id='customtext'> </span>, volete condividere con me questo giorno speciale per Gemma e Nico?</p>"); 
 			   $("#signup-text").text("Lasciatemi il tuo indirizzo email e vi terrò aggiornati"); 
-
 			}
 
-			$("#modaltitle").text("Grazie!");
-			$("#modalbody").text("Fatto! Grazie mille, Nico E Gemma saranno contenti di averti. Ti mandero presto un email di conferma con piu dettagli. Se pensi di doverci lasciare altri indirizzi email con cui comunicare, fai pure!");
+			$("#modaltitle").text("Perfetto!");
+			$("#modalbody").html("<p>Adesso basta tenere l'email sotto controllo, al resto penso io.</p> <p><strong> Kira</strong></p>");
+			$("#closebtn").text("A presto!");
 
 		} 
 		else if(codeTable[pass1.toUpperCase()][1]=='esp'){
@@ -58,8 +59,9 @@ function checkPass(){
 			}
 
 
-			$("#modaltitle").text("Gracias!");
-			$("#modalbody").text("Texto muy largo en castellano aqui");
+			$("#modaltitle").text("Perfecto!");
+			$("#modalbody").text("Ahora solo hay que estar atento al email, del resto me encargo yo!");
+			$("#closebtn").text("Hasta pronto!");
 		}
 		else if(codeTable[pass1.toUpperCase()][1]=='cat'){
 			if(codeTable[pass1.toUpperCase()][2]=='male'){
@@ -75,9 +77,9 @@ function checkPass(){
 			   $("#signup-text").text("Deixeu-me els vostres email i us mantindré informats"); 
 			}
 
-
-			$("#modaltitle").text("Merci!");
-			$("#modalbody").text("Molt be en catala aqui");
+			$("#modaltitle").text("Perfecte!");
+			$("#modalbody").text("Ara només cal estar atent al email, de la resta me'n encarrego jo!");
+			$("#closebtn").text("Fins aviat!");
 		}
 
 			$("#customtext").text(codeTable[pass1.toUpperCase()][0]);

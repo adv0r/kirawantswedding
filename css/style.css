@@ -118,6 +118,14 @@ body {
   display: none;
 }
 
+.modal-body p{
+  color: black;
+}
+
+.modal-body strong{
+  color: black;
+  text-align: left;
+}
 .welcome {
   color: white;
   font-size: 16px; font-size: 4vw;
