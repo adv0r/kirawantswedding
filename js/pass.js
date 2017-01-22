@@ -7,6 +7,7 @@ function checkPass(){
 	if (isCodeValid(pass1)) {
 		$("#secretdiv").css("visibility", "visible");
 		$("#enterpass").css("display", "none"); 
+		$("#guestsinput").focus();
 		$("#customtext").text(codeTable[pass1.toUpperCase()][0]);
 		if(codeTable[pass1.toUpperCase()][1]=='ita'){
 			$("#welcome-text-ita").css("display", "block"); 
