@@ -8,7 +8,8 @@ function checkPass(){
 	if (isCodeValid(pass1)) {
 		$("#secretdiv").css("visibility", "visible");
 		$("#enterpass").css("display", "none"); 
-		//$("#guestsinput").focus();
+		$("#hiddeninputcode").val(pass1); 
+		$("#guestsinput").focus();
 		setTimeout(function(){
 			    var shakeoptions = {  distance: 60, times: 1 };
 				$("#signup").effect("shake",shakeoptions);
