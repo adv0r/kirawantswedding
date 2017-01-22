@@ -1,4 +1,3 @@
-var mysecretvar = "daverO=!!?!?";
 function checkPass(){
 	var pass1 = $("#personalcodeinput").val();
 	console.log("Checking invitation code "+pass1);
@@ -12,7 +11,7 @@ function checkPass(){
 		$("#guestsinput").focus();
 
 		setTimeout(function(){
-			    var shakeoptions = {  distance: 60, times: 1 };
+			    var shakeoptions = {  distance: 10, times: 6 , direction : 'up' };
 				$("#signup").effect("shake",shakeoptions);
 				}
 		 	, 4000);
@@ -63,8 +62,10 @@ function checkPass(){
 
 function shakeit(){
 	console.log("Nope!");
+	var errAudio = new Audio('audio/err.mp3');
+	errAudio.play();
 	var shakeoptions = {  distance: 40, times: 2 };
-	$("#enterpass").effect("shake",shakeoptions);
+	$("#personalcodediv").effect("shake",shakeoptions);
 	$("#personalcodeinput").select();
 }
 
