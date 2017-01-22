@@ -26,6 +26,7 @@ function shakeit(){
 	console.log("Nope!");
 	var shakeoptions = {  distance: 40, times: 2 };
 	$("#enterpass").effect("shake",shakeoptions);
+	$("#personalcodeinput").select();
 }
 
 document.querySelector('#personalcodeinput').addEventListener('keypress', function (e) {
