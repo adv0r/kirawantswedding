@@ -10,20 +10,31 @@ function checkPass(){
 		$("#enterpass").css("display", "none"); 
 		$("#hiddeninputcode").val(pass1); 
 		$("#guestsinput").focus();
+
 		setTimeout(function(){
 			    var shakeoptions = {  distance: 60, times: 1 };
 				$("#signup").effect("shake",shakeoptions);
 				}
 		 	, 4000);
-		$("#customtext").text(codeTable[pass1.toUpperCase()][0]);
 		if(codeTable[pass1.toUpperCase()][1]=='ita'){
-			$("#welcome-text-ita").css("display", "block"); 
+			$("#welcome-text").html("<p id='welcome-text' class='welcome'> Ciao <span id='customtext'> </span>, benvenuto qui</p>"); 
 			$("#signup-text-ita").css("display", "block"); 
+
+			$("#modaltitle").text("Grazie!");
+			$("#modalbody").text("Fatto! Grazie mille, Nico E Gemma saranno contenti di averti. Ti mandero presto un email di conferma con piu dettagli. Se pensi di doverci lasciare altri indirizzi email con cui comunicare, fai pure!");
+
 		} 
 		else if(codeTable[pass1.toUpperCase()][1]=='esp'){
 			$("#signup-text-esp").css("display", "block"); 
-			$("#welcome-text-esp").css("display", "block"); 
+			$("#welcome-text").html("<p id='welcome-text' class='welcome'> Hola <span id='customtext'> </span>, bienvenudo aqui!</p>"); 
+
+			$("#modaltitle").text("Gracias!");
+			$("#modalbody").text("Texto muy largo en castellano aqui");
+
 		}
+
+		$("#customtext").text(codeTable[pass1.toUpperCase()][0]);
+
 		if(codeTable[pass1.toUpperCase()][2]=='single'){
 			//TODO
 		} 
