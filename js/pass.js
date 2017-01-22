@@ -23,6 +23,12 @@ function checkPass(){
 			$("#signup-text-esp").css("display", "block"); 
 			$("#welcome-text-esp").css("display", "block"); 
 		}
+		if(codeTable[pass1.toUpperCase()][2]=='single'){
+			//TODO
+		} 
+		else if(codeTable[pass1.toUpperCase()][2]=='multi'){
+			//TODO
+		}
 	} 
 	else {
 		shakeit();
@@ -57,6 +63,6 @@ function isCodeValid(code){
 
 //Design :  key is the invitation code, codeTable[key][0] il nome degli invitati, , codeTable[key][1] la lingua
 var codeTable =  {
-	ADMIN: ['cazzone','esp'], 
-	ASPIRA: ['FEDE','ita']
+	ADMIN: ['cazzone','esp','single'], 
+	ASPIRA: ['FEDE','ita','multi']
 };
