@@ -22,6 +22,7 @@ function checkPass(){
 				}
 		 	, 4000);
 
+		var calText = "<hr/> <p>Don't forget! (<a href='cal/Kira-Wants-Wedding.ics'>iCal</a> - <a href='https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NHVrYmo3M3NpbTIxdmRlajU4bWNiZ3FhYmcgM2M0dTJsOTg3NXZhY2dub2VqanVjZmFyc3NAZw&tmsrc=3c4u2l9875vacgnoejjucfarss%40group.calendar.google.com'>Google Calendar</a>)</p>";
 		if(codeTable[pass1.toUpperCase()][1]=='ita'){
 			if(codeTable[pass1.toUpperCase()][2]=='male'){
 			   $("#welcome-text").html("<p id='welcome-text' class='welcome'>Ciao <span id='customtext'> </span>, vuoi condividere con me questo giorno speciale per Gemma e Nico?</p>"); 
@@ -38,7 +39,7 @@ function checkPass(){
 			}
 
 			$("#modaltitle").text("Perfetto!");
-			$("#modalbody").html("<p>Adesso basta tenere l'email sotto controllo, al resto penso io.</p> <p><strong> Kira</strong></p>");
+			$("#modalbody").html("<p>Adesso basta tenere l'email sotto controllo, al resto penso io.</p> <p><strong> Kira</strong></p>"+calText);
 			$("#closebtn").text("A presto!");
 
 		} 
@@ -60,7 +61,7 @@ function checkPass(){
 
 
 			$("#modaltitle").text("Perfecto!");
-			$("#modalbody").text("Ahora solo hay que estar atento al email, del resto me encargo yo!");
+			$("#modalbody").html("<p>Ahora solo hay que estar atento al email, del resto me encargo yo!</p> <p><strong> Kira</strong></p>"+calText);
 			$("#closebtn").text("Hasta pronto!");
 		}
 		else if(codeTable[pass1.toUpperCase()][1]=='cat'){
@@ -78,7 +79,7 @@ function checkPass(){
 			}
 
 			$("#modaltitle").text("Perfecte!");
-			$("#modalbody").text("Ara només cal estar atent al email, de la resta me'n encarrego jo!");
+			$("#modalbody").html("<p>Ara només cal estar atent al email, de la resta me'n encarrego jo!</p> <p><strong> Kira</strong></p>"+calText);
 			$("#closebtn").text("Fins aviat!");
 		}
 
