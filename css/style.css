@@ -122,3 +122,7 @@ body {
   color: white;
   font-size: 16px; font-size: 4vw;
 }
+
+.modal-title, .modal-body {
+  color: black !important; 
+}
