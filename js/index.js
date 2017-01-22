@@ -1,6 +1,46 @@
 // If you use this code, please link to this pen (cdpn.io/rkcjt). Thanks :)
 'use strict';
 
+$( document ).ready(function() {
+  var chihuahuaeye1 = new DrawEye("#dogeyeleft", "#dogpupilleft");
+  var chihuahuaeye2 = new DrawEye("#dogeyeright", "#dogpupilright");
+
+  //TODO here add code to check mobile 
+  setTimeout(function(){
+          var shakeoptions = {  distance: 10, times: 6 , direction : 'down' };
+        $("#personalcodediv").effect("shake",shakeoptions);
+        }
+      , 5000);  
+
+
+  //real time form validation
+  var passInput = document.getElementById("personalcodeinput");
+  passInput.oninput = function(){
+    //console.log(this.value);
+    var btnBaseText = "Follow the Sun ☀ ";
+    if(isCodeValid(this.value)){
+        var tadaAudio = new Audio('audio/tada.mp3');
+        tadaAudio.play();
+        var invitees = codeTable[this.value.toUpperCase()][0];
+        console.log("Welcome "+invitees);
+        
+       
+        //$("#sunbtn").toggle("highlight");
+        //setTimeout(function(){ $("#sunbtn" ).toggle("highlight"); } , 400);
+
+        //Text to speech
+        //var msg = new SpeechSynthesisUtterance("Welcome "+invitees);
+        //window.speechSynthesis.speak(msg);
+    }
+    else {
+           //$('#sunbtn').prop('disabled', true);
+           //$("#sunbtn").css("display", "none"); 
+
+    }
+  };
+
+});
+
 var DrawEye = function(eyecontainer, pupil){
   // Initialise core variables
   this.$pupil = $(pupil);
@@ -56,9 +96,4 @@ var onResize = function () {
     this.eyeposy = this.$eyecontainer.offset().top;
 };
 
-$( document ).ready(function() {
-  var chihuahuaeye1 = new DrawEye("#dogeyeleft", "#dogpupilleft");
-  var chihuahuaeye2 = new DrawEye("#dogeyeright", "#dogpupilright");
 
-  //TODO here add code to check mobile 
-});
