@@ -37,8 +37,11 @@ $( document ).ready(function() {
           $('#sunbtn').prop('disabled', true);
     }
   };
-
 });
+
+function hideSignup(){
+  $("#signup").hide();
+}
 
 var DrawEye = function(eyecontainer, pupil){
   // Initialise core variables

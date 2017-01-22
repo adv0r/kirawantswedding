@@ -34,7 +34,7 @@ function checkPass(){
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='multi'){
 			   $("#welcome-text").html("<p id='welcome-text' class='welcome'>Ciao <span id='customtext'> </span>, volete condividere con me questo giorno speciale per Gemma e Nico?</p>"); 
-			   $("#signup-text").text("Lasciatemi il tuo indirizzo email e vi terrò aggiornati"); 
+			   $("#signup-text").text("Lasciatemi il vostro indirizzo email e vi terrò aggiornati"); 
 			}
 
 			$("#modaltitle").text("Perfetto!");
@@ -55,7 +55,7 @@ function checkPass(){
 			} 
 			else if(codeTable[pass1.toUpperCase()][2]=='multi'){
 			   $("#welcome-text").html("<p id='welcome-text' class='welcome'>Hola <span id='customtext'> </span>, ¿queréis compartir conmigo este día tan especial para Gemma y Nico?</p>"); 
-   			   $("#signup-text").text("Dejadme vuestros email aquí abajo y os mantendré informados"); 
+   			   $("#signup-text").text("Dejadme vuestros email y os mantendré informados"); 
 			}
 
 
