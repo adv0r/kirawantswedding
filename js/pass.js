@@ -8,12 +8,12 @@ function checkPass(){
 	if (isCodeValid(pass1)) {
 		$("#secretdiv").css("visibility", "visible");
 		$("#enterpass").css("display", "none"); 
-		$("#guestsinput").focus();
+		//$("#guestsinput").focus();
 		setTimeout(function(){
 			    var shakeoptions = {  distance: 60, times: 1 };
 				$("#signup").effect("shake",shakeoptions);
 				}
-		 	, 5000);
+		 	, 4000);
 		$("#customtext").text(codeTable[pass1.toUpperCase()][0]);
 		if(codeTable[pass1.toUpperCase()][1]=='ita'){
 			$("#welcome-text-ita").css("display", "block"); 
