@@ -86,7 +86,7 @@ body {
 #dogeyeleft,
 #dogeyeright {
   position: absolute;
-  background: rgba(255, 255, 255, 0.67);
+  background: rgba(226, 200, 103, 0.48);
   overflow: hidden;
   border-radius: 50%;
 }
