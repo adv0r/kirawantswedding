@@ -135,3 +135,7 @@ body {
 .modal-title, .modal-body {
   color: black !important; 
 }
+
+.input-group .form-control:first-child {
+  border-radius: 6px;
+}
