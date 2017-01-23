@@ -18,11 +18,8 @@ function checkPass(){
 		$("#hiddeninputcode").val(pass1);
 		//$("#guestsinput").focus();
 
-		setTimeout(function(){
-			    var shakeoptions = {  distance: 10, times: 6 , direction : 'up' };
-				$("#signup").effect("shake",shakeoptions);
-				}
-		 	, 8000);
+		setTimeout(function(){shakeSignup();}, 8000);
+		setTimeout(function(){shakeSignup();}, 10000);
 
 		var calText = "<hr/> <p align='right'>Save the date <img src='img/calendar-128.png' width='24px'>  (<a href='cal/Kira-Wants-Wedding.ics'>iCal</a> | <a href='https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NHVrYmo3M3NpbTIxdmRlajU4bWNiZ3FhYmcgM2M0dTJsOTg3NXZhY2dub2VqanVjZmFyc3NAZw&tmsrc=3c4u2l9875vacgnoejjucfarss%40group.calendar.google.com'>Google Calendar</a>)</p>";
 		if(codeTable[pass1.toUpperCase()][1]=='ita'){
@@ -92,6 +89,10 @@ function checkPass(){
 	}
 }
 
+function shakeSignup(){
+	var shakeoptions = {  distance: 10, times: 6 , direction : 'up' };
+	$("#signup").effect("shake",shakeoptions);
+}
 function shakeit(){
 	console.log("Nope!");
 	var errAudio = new Audio('audio/err.mp3');
