@@ -83,7 +83,7 @@ var codeTable =  {
 	THESTUFFTHATWASBORNINKK : [	'Trejo y Tamara',	'esp'	, 'multi'],
 	LAVAMOSAQUEMAR : [	'Masero',	'esp'	, 'male'],
 	SLIVERQUEEN : [	'Alicia',	'esp'	, 'female'],
-	GREENFIELDATZEN : [	'Carmine e Lara'	, 'ita' ,	'multi']
-	QWE : [	'Francesca e Francesca'	, 'ita' ,	'multi'],
+	GREENFIELDATZEN : [	'Carmine e Lara'	, 'ita' ,	'multi'],
+	QWE : [	'Francesca e Francesco'	, 'ita' ,	'multi']
 
 };
