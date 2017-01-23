@@ -26,6 +26,8 @@ $( document ).ready(function() {
 
         $('#sunbtn').prop('disabled', false);
         $('#sunbtn').addClass('glow-please');
+        var shakeoptions = {  distance: 40, times: 1 };
+        $("#sunbtn").effect("shake",shakeoptions);
         //$("#sunbtn").toggle("highlight");
         //setTimeout(function(){ $("#sunbtn" ).toggle("highlight"); } , 400);
 
