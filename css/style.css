@@ -56,10 +56,14 @@ body {
 }
 #enterpass {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #enterpass img {
-  height: calc(100vh - 100px);
   width: auto;
+  max-width: 100%;
+  max-height: 50vh;
 }
 #secretdiv {
   /* visibility: hidden; */
@@ -145,4 +149,25 @@ body {
 
 .input-group .form-control:first-child {
   border-radius: 6px;
+}
+
+#personalcodediv,
+#sunbtn {
+  margin-top: 10px;
+}
+
+
+@media screen and (min-width: 600px) {
+  #enterpass {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #enterpass img {
+    height: calc(90vh - 100px);
+    width: auto;
+    max-width: 100%;
+    max-height: 100vh;
+  }
 }

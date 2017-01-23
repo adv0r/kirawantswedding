@@ -1,119 +1,119 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	  	<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	  	<title>Kira Wants Wedding!</title>
-	  	
-
-	  	<!-- jQuery UI for shake -->
-	  	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-
-	  	<!-- jQuery -->
-		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-	  	<!-- Bootstrap -->
-
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Kira Wants Wedding!</title>
 
 
-	  	<!-- Custom CSS -->
-	  	<link rel="stylesheet" href="./css/style.css">
-		
-	  	<!-- CloudStitch -->
-	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.13/webcomponents-lite.min.js"></script>
-  		<link rel="import" href="https://components.cloudstitch.com/cloudstitch-handlebars.html" />
+      <!-- jQuery UI for shake -->
+      <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 
-	</head>
+      <!-- jQuery -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-	<body>
+      <!-- Bootstrap -->
 
-		<!-- Enter Invitation Code  ________________________ -->
-		<div id="enterpass">
-			<center>
-				<img src="img/intro.png" alt="" width="200px">
-				<div class="input-group input-group-lg col-xs-6" id="personalcodediv">
-			      <input type="text" id="personalcodeinput" class="form-control" placeholder="INVITATION CODE ..." autofocus>
-				
-			        <button id="sunbtn" class="btn btn-default" disabled type="button" onclick="javascript:checkPass()">Follow the Sun ☀ </button>
-			      <span class="input-group-btn"></span>
-			    </div>
-			</center>
-	  	</div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-		<!-- Enter SecretDiv  ________________________ -->
- 		<div id="secretdiv">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-			<!-- Welcome text ________________________ -->
-			<div id="welcometext">
-				<center>
-					<p id="welcome-text" class="welcome"></p>
-				</center>
-			</div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
-			<!-- Kira Image ________________________ -->
-			<div class="img" id="kiraimg">
-			    <div class="img-container">
-			      <img src="img/kirawantsplanner.jpg" alt="" id="rotatingImg">
-			      <div id="dogeyeleft">
-			        <div id="dogpupilleft"></div>
-			      </div>
-			      <div id="dogeyeright">
-			        <div id="dogpupilright"></div>
-			      </div>
-			    </div>
-		  	</div>
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="./css/style.css">
+
+      <!-- CloudStitch -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.13/webcomponents-lite.min.js"></script>
+      <link rel="import" href="https://components.cloudstitch.com/cloudstitch-handlebars.html" />
+
+  </head>
+
+  <body>
+
+    <!-- Enter Invitation Code  ________________________ -->
+    <div id="enterpass">
+      <center>
+        <img src="img/intro.jpg" alt="">
+        <div class="input-group input-group-lg col-xs-6" id="personalcodediv">
+            <input type="text" id="personalcodeinput" class="form-control" placeholder="INVITATION CODE ..." autofocus>
+
+              <button id="sunbtn" class="btn btn-default" disabled type="button" onclick="javascript:checkPass()">Follow the Sun ☀ </button>
+            <span class="input-group-btn"></span>
+          </div>
+      </center>
+      </div>
+
+    <!-- Enter SecretDiv  ________________________ -->
+    <div id="secretdiv">
+
+      <!-- Welcome text ________________________ -->
+      <div id="welcometext">
+        <center>
+          <p id="welcome-text" class="welcome"></p>
+        </center>
+      </div>
 
 
-			<!-- Sign-up ________________________ -->
-		  	<div id="signup">
-		  		<center>
-			  		<p id="signup-text"></p>
-			  		<cloudstitch-handlebars user="advanced" app="kirawantswedding-signup"></cloudstitch-handlebars>
-		  		</center>
-			</div>
-		</div>
+      <!-- Kira Image ________________________ -->
+      <div class="img" id="kiraimg">
+          <div class="img-container">
+            <img src="img/kirawantsplanner.jpg" alt="" id="rotatingImg">
+            <div id="dogeyeleft">
+              <div id="dogpupilleft"></div>
+            </div>
+            <div id="dogeyeright">
+              <div id="dogpupilright"></div>
+            </div>
+          </div>
+        </div>
 
-		<!-- Footer ________________________ 
-			<footer class="footer">
-			<center>
-			      <div class="container">
-			        <p class="text-muted">Designed and maintained by Kira Entertainment Corp. - &reg; 2017 -  <a href="mailto:info@kirawants.wedding">info@kirawants.wedding</a></p>
-			      </div>
-		      </center>
-		    </footer>
 
-		-->
-		<!-- Modal Pop-up -->
-		  <div class="modal fade" id="myModal" role="dialog">
-		    <div class="modal-dialog modal-lg">
-		      <div class="modal-content">
-		        <div class="modal-header">
-		          <button type="button" class="close" onclick="hideSignup()" data-dismiss="modal">&times;</button>
-		          <h4 class="modal-title" id="modaltitle"></h4>
-		        </div>
-		        <div class="modal-body" id="modalbody">
-		          
-		        </div>
-		        <div class="modal-footer">
-		          <button type="button" class="btn btn-default" data-dismiss="modal" id="closebtn" onclick="hideSignup()">Close</button>
-		        </div>
-		      </div>
-		    </div>
-		  </div>
+      <!-- Sign-up ________________________ -->
+        <div id="signup">
+          <center>
+            <p id="signup-text"></p>
+            <cloudstitch-handlebars user="advanced" app="kirawantswedding-signup"></cloudstitch-handlebars>
+          </center>
+      </div>
+    </div>
 
-  	
-  	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Footer ________________________
+      <footer class="footer">
+      <center>
+            <div class="container">
+              <p class="text-muted">Designed and maintained by Kira Entertainment Corp. - &reg; 2017 -  <a href="mailto:info@kirawants.wedding">info@kirawants.wedding</a></p>
+            </div>
+          </center>
+        </footer>
 
-  	<script src="js/index.js"></script>
-  	<script src="js/db.js"></script>
-	<script src="js/pass.js"></script>
-	<script src="js/mobile.js"></script>
+    -->
+    <!-- Modal Pop-up -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" onclick="hideSignup()" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="modaltitle"></h4>
+            </div>
+            <div class="modal-body" id="modalbody">
 
-	</body>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" id="closebtn" onclick="hideSignup()">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="js/index.js"></script>
+    <script src="js/db.js"></script>
+  <script src="js/pass.js"></script>
+  <script src="js/mobile.js"></script>
+
+  </body>
 </html>
