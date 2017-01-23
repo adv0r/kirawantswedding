@@ -27,16 +27,16 @@ function checkPass(){
 		var calText = "<hr/> <p align='right'>Save the date <img src='img/calendar-128.png' width='24px'>  (<a href='cal/Kira-Wants-Wedding.ics'>iCal</a> | <a href='https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NHVrYmo3M3NpbTIxdmRlajU4bWNiZ3FhYmcgM2M0dTJsOTg3NXZhY2dub2VqanVjZmFyc3NAZw&tmsrc=3c4u2l9875vacgnoejjucfarss%40group.calendar.google.com'>Google Calendar</a>)</p>";
 		if(codeTable[pass1.toUpperCase()][1]=='ita'){
 			if(codeTable[pass1.toUpperCase()][2]=='male'){
-			   $("#welcome-text").html("<p id='welcome-text' class='welcome'>Ciao <span id='customtext'> </span>, vuoi condividere con me questo giorno speciale per Gemma e Nico?</p>");
+			   $("#welcome-text").html("<p class='welcome'>Ciao <span id='customtext'> </span>, vuoi condividere con me questo giorno speciale per Gemma e Nico?</p>");
 			   $("#signup-text").text("Lasciami il tuo indirizzo email e ti terrò aggiornato");
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='female'){
-			   $("#welcome-text").html("<p id='welcome-text' class='welcome'>Ciao <span id='customtext'> </span>, vuoi condividere con me questo giorno speciale per Gemma e Nico?</p>");
+			   $("#welcome-text").html("<p class='welcome'>Ciao <span id='customtext'> </span>, vuoi condividere con me questo giorno speciale per Gemma e Nico?</p>");
 			   $("#signup-text").text("Lasciami il tuo indirizzo email e ti terrò aggiornata");
 
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='multi'){
-			   $("#welcome-text").html("<p id='welcome-text' class='welcome'>Ciao <span id='customtext'> </span>, volete condividere con me questo giorno speciale per Gemma e Nico?</p>");
+			   $("#welcome-text").html("<p class='welcome'>Ciao <span id='customtext'> </span>, volete condividere con me questo giorno speciale per Gemma e Nico?</p>");
 			   $("#signup-text").text("Lasciatemi il vostro indirizzo email e vi terrò aggiornati");
 			}
 
@@ -47,17 +47,17 @@ function checkPass(){
 		}
 		else if(codeTable[pass1.toUpperCase()][1]=='esp'){
 			if(codeTable[pass1.toUpperCase()][2]=='male'){
-			   $("#welcome-text").html("<p id='welcome-text' class='welcome'>Hola <span id='customtext'> </span>, ¿quieres compartir conmigo este día tan especial para Gemma y Nico?</p>");
+			   $("#welcome-text").html("<p class='welcome'>Hola <span id='customtext'> </span>, ¿quieres compartir conmigo este día tan especial para Gemma y Nico?</p>");
 			   $("#signup-text").text("Dejame un email y te mantendré informado");
 
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='female'){
-			   $("#welcome-text").html("<p id='welcome-text' class='welcome'>Hola <span id='customtext'> </span>, ¿quieres compartir conmigo este día tan especial para Gemma y Nico?</p>");
+			   $("#welcome-text").html("<p class='welcome'>Hola <span id='customtext'> </span>, ¿quieres compartir conmigo este día tan especial para Gemma y Nico?</p>");
 			   $("#signup-text").text("Dejame un email y te mantendré informada");
 
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='multi'){
-			   $("#welcome-text").html("<p id='welcome-text' class='welcome'>Hola <span id='customtext'> </span>, ¿queréis compartir conmigo este día tan especial para Gemma y Nico?</p>");
+			   $("#welcome-text").html("<p class='welcome'>Hola <span id='customtext'> </span>, ¿queréis compartir conmigo este día tan especial para Gemma y Nico?</p>");
    			   $("#signup-text").text("Dejadme vuestros email y os mantendré informados");
 			}
 
@@ -68,15 +68,15 @@ function checkPass(){
 		}
 		else if(codeTable[pass1.toUpperCase()][1]=='cat'){
 			if(codeTable[pass1.toUpperCase()][2]=='male'){
-			   $("#welcome-text").html("<p id='welcome-text' class='welcome'>Hola <span id='customtext'> </span>, vols compartir amb mi aquest dia tan especial per la Gemma i el Nico?</p>");
+			   $("#welcome-text").html("<p class='welcome'>Hola <span id='customtext'> </span>, vols compartir amb mi aquest dia tan especial per la Gemma i el Nico?</p>");
 			   $("#signup-text").text("Deixa'm un email i te mantindré informat");
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='female'){
-			   $("#welcome-text").html("<p id='welcome-text' class='welcome'>Hola <span id='customtext'> </span>, vols compartir amb mi aquest dia tan especial per la Gemma i el Nico?</p>");
+			   $("#welcome-text").html("<p class='welcome'>Hola <span id='customtext'> </span>, vols compartir amb mi aquest dia tan especial per la Gemma i el Nico?</p>");
 			   $("#signup-text").text("Deixa'm un email i te mantindré informada");
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='multi'){
-			   $("#welcome-text").html("<p id='welcome-text' class='welcome'>Hola <span id='customtext'> </span>, voleu compartir amb mi aquest dia tan especial per la Gemma i el Nico?</p>");
+			   $("#welcome-text").html("<p class='welcome'>Hola <span id='customtext'> </span>, voleu compartir amb mi aquest dia tan especial per la Gemma i el Nico?</p>");
 			   $("#signup-text").text("Deixeu-me els vostres email i us mantindré informats");
 			}
 
