@@ -24,7 +24,7 @@ $( document ).ready(function() {
         var invitees = codeTable[this.value.toUpperCase()][0];
         console.log("Welcome "+invitees);
         
-        //$('#sunbtn').prop('disabled', false);
+        $('#sunbtn').prop('disabled', false);
         $('#sunbtn').addClass('glow-please'); 
         //$("#sunbtn").toggle("highlight");
         //setTimeout(function(){ $("#sunbtn" ).toggle("highlight"); } , 400);
@@ -34,7 +34,7 @@ $( document ).ready(function() {
         //window.speechSynthesis.speak(msg);
     }
     else {
-        //$('#sunbtn').prop('disabled', true);
+        $('#sunbtn').prop('disabled', true);
         $('#sunbtn').removeClass('glow-please'); 
     }
   };
