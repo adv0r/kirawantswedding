@@ -5,12 +5,12 @@ $( document ).ready(function() {
   var chihuahuaeye1 = new DrawEye("#dogeyeleft", "#dogpupilleft");
   var chihuahuaeye2 = new DrawEye("#dogeyeright", "#dogpupilright");
 
-  //TODO here add code to check mobile 
+  //TODO here add code to check mobile
   setTimeout(function(){
           var shakeoptions = {  distance: 10, times: 6 , direction : 'down' };
         $("#personalcodediv").effect("shake",shakeoptions);
         }
-      , 5000);  
+      , 5000);
 
 
   //real time form validation
@@ -23,9 +23,9 @@ $( document ).ready(function() {
         tadaAudio.play();
         var invitees = codeTable[this.value.toUpperCase()][0];
         console.log("Welcome "+invitees);
-        
+
         $('#sunbtn').prop('disabled', false);
-        $('#sunbtn').addClass('glow-please'); 
+        $('#sunbtn').addClass('glow-please');
         //$("#sunbtn").toggle("highlight");
         //setTimeout(function(){ $("#sunbtn" ).toggle("highlight"); } , 400);
 
@@ -35,7 +35,7 @@ $( document ).ready(function() {
     }
     else {
         $('#sunbtn').prop('disabled', true);
-        $('#sunbtn').removeClass('glow-please'); 
+        $('#sunbtn').removeClass('glow-please');
     }
   };
 });
@@ -52,7 +52,7 @@ var DrawEye = function(eyecontainer, pupil){
   this.$eyecontainer = $(eyecontainer);
   this.eyeposx = this.$eyecontainer.offset().left;
   this.eyeposy = this.$eyecontainer.offset().top;
-  
+
   this.center = {
     x: this.$eyecontainer.width()/2 - this.r,
     y: this.$eyecontainer.height()/2 - this.r
@@ -61,7 +61,7 @@ var DrawEye = function(eyecontainer, pupil){
   this.mouseX = 0;
   this.mouseY = 0;
   setTimeout($.proxy(onResize, this), 1);
-  
+
   $(window).on('resize', onResize.bind(this));
   // Listen for mouse movement
   $(window).mousemove(function(e){
