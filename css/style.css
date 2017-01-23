@@ -180,6 +180,10 @@ body {
 .email-subscribe {
   max-width: 400px;
 }
+
+a {
+  color: black;
+}
 /*
 * RESPONSIVE
  */
