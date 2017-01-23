@@ -158,6 +158,20 @@ body {
 }
 
 
+.glow-please {
+  animation: glowAnim 5s infinite;
+}
+
+@-webkit-keyframes glowAnim {
+  from { background-color: #fc9200; -webkit-box-shadow: 0 0 9px #333; }
+  50% { background-color: #ffb515; -webkit-box-shadow: 0 0 18px #91bd09; }
+  to { background-color: #fc9200; -webkit-box-shadow: 0 0 9px #333; }
+}
+
+/*
+* RESPONSIVE
+ */
+
 @media screen and (min-width: 600px) {
   #enterpass {
     min-height: 100vh;
