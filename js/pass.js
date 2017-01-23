@@ -16,7 +16,7 @@ function checkPass(){
       });
 		$("#enterpass").css("display", "none");
 		$("#hiddeninputcode").val(pass1);
-		$("#guestsinput").focus();
+		//$("#guestsinput").focus();
 
 		setTimeout(function(){
 			    var shakeoptions = {  distance: 10, times: 6 , direction : 'up' };
