@@ -55,7 +55,8 @@ body {
 }
 
 #secretdiv {
-  visibility: hidden;
+  //visibility: hidden;
+  display: none;
 }
 .img {
   display: flex;
