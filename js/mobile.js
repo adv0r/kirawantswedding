@@ -39,26 +39,22 @@ function deviceOrientationHandler(tiltLR, tiltFB, dir){
 
 
 	if(Math.abs(lastAppliedTilt - tiltLR)>minTilt) {
-		if(tiltLR > -60 && tiltLR < 60){
-
+		if(tiltLR > -40 && tiltLR < 40){
 			$("#dogeyeleft").hide();
 			$("#dogeyeright").hide();
 
 			lastAppliedTilt = tiltLR;
 			tiltLR = tiltLR/2; //reduce rotation
 			var logo = document.getElementById("rotatingImg");
-			logo.style.webkitTransform =
-			  "rotate("+ tiltLR +"deg) rotate3d(1,0,0, "+ (tiltFB*-1)+"deg)";
-			logo.style.MozTransform = "rotate("+ tiltLR +"deg)";
-			logo.style.transform =
-			  "rotate("+ tiltLR +"deg) rotate3d(1,0,0, "+ (tiltFB*-1)+"deg)";
+			logo.style.webkitTransform ="rotate("+ tiltLR +"deg)";
+			logo.style.transform ="rotate("+ tiltLR +"deg)";
 		  }
 
 	}
 	// Apply the transform to the image
 
 
-	// Parameters below only work in portait mode!!! 
+	// Parameters below only work in portait mode!!!
 
 	// Occhi In posizione centrale  tiltLR : 0 , tiltFB : 50
 	// Occhi max a destra : tiltLR > 40
