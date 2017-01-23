@@ -10,7 +10,7 @@ $( document ).ready(function() {
           var shakeoptions = {  distance: 10, times: 6 , direction : 'down' };
         $("#personalcodediv").effect("shake",shakeoptions);
         }
-      , 5000);
+      , 6000);
 
 
   //real time form validation

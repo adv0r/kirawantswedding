@@ -11,9 +11,9 @@ function checkPass(){
        		 helicopterAudio.play();
 		}
 
-		$("#secretdiv").fadeIn(600, function () {
-        $( window ).trigger( 'resize' );
-      });
+		$("#secretdiv").fadeIn(1600, function () {
+        	$( window ).trigger( 'resize' );
+      	});
 		$("#enterpass").css("display", "none");
 		$("#hiddeninputcode").val(pass1);
 		//$("#guestsinput").focus();
@@ -22,7 +22,7 @@ function checkPass(){
 			    var shakeoptions = {  distance: 10, times: 6 , direction : 'up' };
 				$("#signup").effect("shake",shakeoptions);
 				}
-		 	, 4000);
+		 	, 8000);
 
 		var calText = "<hr/> <p align='right'>Save the date <img src='img/calendar-128.png' width='24px'>  (<a href='cal/Kira-Wants-Wedding.ics'>iCal</a> | <a href='https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NHVrYmo3M3NpbTIxdmRlajU4bWNiZ3FhYmcgM2M0dTJsOTg3NXZhY2dub2VqanVjZmFyc3NAZw&tmsrc=3c4u2l9875vacgnoejjucfarss%40group.calendar.google.com'>Google Calendar</a>)</p>";
 		if(codeTable[pass1.toUpperCase()][1]=='ita'){
