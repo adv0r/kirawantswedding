@@ -11,7 +11,7 @@ function checkPass(){
        		 helicopterAudio.play();
 		}  
 		
-		$("#secretdiv").css("visibility", "visible");
+		$("#secretdiv").show();
 		$("#enterpass").css("display", "none"); 
 		$("#hiddeninputcode").val(pass1); 
 		$("#guestsinput").focus();
@@ -84,8 +84,6 @@ function checkPass(){
 		}
 
 			$("#customtext").text(codeTable[pass1.toUpperCase()][0]);
-
-		
 	} 
 	else {
 		shakeit();
