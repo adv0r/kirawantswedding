@@ -44,6 +44,7 @@ $( document ).ready(function() {
 
 function hideSignup(){
   $("#signup").hide();
+  $("#welcome-text").hide();
 }
 
 var DrawEye = function(eyecontainer, pupil){
