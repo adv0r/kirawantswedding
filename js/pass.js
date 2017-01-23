@@ -11,7 +11,7 @@ function checkPass(){
        		 helicopterAudio.play();
 		}
 
-		$("#secretdiv").show(1, function () {
+		$("#secretdiv").fadeIn(600, function () {
         $( window ).trigger( 'resize' );
       });
 		$("#enterpass").css("display", "none");
