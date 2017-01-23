@@ -130,6 +130,11 @@ body {
   display: none;
 }
 
+#signup-text {
+  font-size: 24px;
+  margin: 20px auto;
+}
+
 .modal-body p{
   color: black;
 }
@@ -141,6 +146,8 @@ body {
 .welcome {
   color: white;
   font-size: 30px;
+  max-width: 600px;
+  line-height: 1.2;
 }
 
 .modal-title, .modal-body {
@@ -170,8 +177,8 @@ body {
   to { background-color: #fc9200; -webkit-box-shadow: 0 0 9px #333; }
 }
 
-.welcome {
-  max-width: 600px;
+.email-subscribe {
+  max-width: 400px;
 }
 /*
 * RESPONSIVE
