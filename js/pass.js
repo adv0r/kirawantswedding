@@ -25,16 +25,16 @@ function checkPass(){
 		if(codeTable[pass1.toUpperCase()][1]=='ita'){
 			if(codeTable[pass1.toUpperCase()][2]=='male'){
 			   $("#welcome-text").html("<p class='welcome'>Ciao <span id='customtext'> </span>, vuoi condividere con me questo giorno speciale per Gemma e Nico?</p>");
-			   $("#signup-text").html("Lasciami il tuo indirizzo email qui sotto &darr; e ti terrò aggiornato");
+			   $("#signup-text").html("Lasciami il tuo indirizzo email qui sotto &darr; e ti terr&oacute; aggiornato");
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='female'){
 			   $("#welcome-text").html("<p class='welcome'>Ciao <span id='customtext'> </span>, vuoi condividere con me questo giorno speciale per Gemma e Nico?</p>");
-			   $("#signup-text").html("Lasciami il tuo indirizzo email qui sotto &darr; e ti terrò aggiornata");
+			   $("#signup-text").html("Lasciami il tuo indirizzo email qui sotto &darr; e ti terr&oacute; aggiornata");
 
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='multi'){
 			   $("#welcome-text").html("<p class='welcome'>Ciao <span id='customtext'> </span>, volete condividere con me questo giorno speciale per Gemma e Nico?</p>");
-			   $("#signup-text").html("Lasciatemi il vostro indirizzo email ⇩ qui sotto ⇩ e vi terrò aggiornati");
+			   $("#signup-text").html("Lasciatemi il vostro indirizzo email qui sotto &darr; e vi terr&oacute; aggiornati");
 			}
 
 			$("#modaltitle").text("Perfetto!");
