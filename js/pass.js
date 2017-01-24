@@ -25,16 +25,16 @@ function checkPass(){
 		if(codeTable[pass1.toUpperCase()][1]=='ita'){
 			if(codeTable[pass1.toUpperCase()][2]=='male'){
 			   $("#welcome-text").html("<p class='welcome'>Ciao <span id='customtext'> </span>, vuoi condividere con me questo giorno speciale per Gemma e Nico?</p>");
-			   $("#signup-text").text("Lasciami il tuo indirizzo email qui sotto e ti terrò aggiornato");
+			   $("#signup-text").html("Lasciami il tuo indirizzo email qui sotto &darr; e ti terrò aggiornato");
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='female'){
 			   $("#welcome-text").html("<p class='welcome'>Ciao <span id='customtext'> </span>, vuoi condividere con me questo giorno speciale per Gemma e Nico?</p>");
-			   $("#signup-text").text("Lasciami il tuo indirizzo email qui sotto e ti terrò aggiornata");
+			   $("#signup-text").html("Lasciami il tuo indirizzo email qui sotto &darr; e ti terrò aggiornata");
 
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='multi'){
 			   $("#welcome-text").html("<p class='welcome'>Ciao <span id='customtext'> </span>, volete condividere con me questo giorno speciale per Gemma e Nico?</p>");
-			   $("#signup-text").text("Lasciatemi il vostro indirizzo email qui sotto e vi terrò aggiornati");
+			   $("#signup-text").html("Lasciatemi il vostro indirizzo email qui sotto &darr; e vi terrò aggiornati");
 			}
 
 			$("#modaltitle").text("Perfetto!");
@@ -45,17 +45,17 @@ function checkPass(){
 		else if(codeTable[pass1.toUpperCase()][1]=='esp'){
 			if(codeTable[pass1.toUpperCase()][2]=='male'){
 			   $("#welcome-text").html("<p class='welcome'>Hola <span id='customtext'> </span>, ¿quieres compartir conmigo este día tan especial para Gemma y Nico?</p>");
-			   $("#signup-text").text("Dejame un email aquí abajo y te mantendré informado");
+			   $("#signup-text").html("Dejame un email aquí abajo &darr; y te mantendré informado");
 
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='female'){
 			   $("#welcome-text").html("<p class='welcome'>Hola <span id='customtext'> </span>, ¿quieres compartir conmigo este día tan especial para Gemma y Nico?</p>");
-			   $("#signup-text").text("Dejame un email aquí abajo y te mantendré informada");
+			   $("#signup-text").html("Dejame un email aquí abajo &darr; y te mantendré informada");
 
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='multi'){
 			   $("#welcome-text").html("<p class='welcome'>Hola <span id='customtext'> </span>, ¿queréis compartir conmigo este día tan especial para Gemma y Nico?</p>");
-   			   $("#signup-text").text("Dejadme vuestros email aquí abajo y os mantendré informados");
+   			   $("#signup-text").html("Dejadme vuestros email aquí abajo &darr; y os mantendré informados");
 			}
 
 
@@ -66,15 +66,15 @@ function checkPass(){
 		else if(codeTable[pass1.toUpperCase()][1]=='cat'){
 			if(codeTable[pass1.toUpperCase()][2]=='male'){
 			   $("#welcome-text").html("<p class='welcome'>Hola <span id='customtext'> </span>, vols compartir amb mi aquest dia tan especial per la Gemma i el Nico?</p>");
-			   $("#signup-text").text("Deixa'm un email aquí a baix i te mantindré informat");
+			   $("#signup-text").html("Deixa'm un email aquí a baix &darr; i te mantindré informat");
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='female'){
 			   $("#welcome-text").html("<p class='welcome'>Hola <span id='customtext'> </span>, vols compartir amb mi aquest dia tan especial per la Gemma i el Nico?</p>");
-			   $("#signup-text").text("Deixa'm un email aquí a baix i te mantindré informada");
+			   $("#signup-text").html("Deixa'm un email aquí a baix &darr; i te mantindré informada");
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='multi'){
 			   $("#welcome-text").html("<p class='welcome'>Hola <span id='customtext'> </span>, voleu compartir amb mi aquest dia tan especial per la Gemma i el Nico?</p>");
-			   $("#signup-text").text("Deixeu-me els vostres email aquí a baix i us mantindré informats");
+			   $("#signup-text").html("Deixeu-me els vostres email aquí a baix &darr; i us mantindré informats");
 			}
 
 			$("#modaltitle").text("Perfecte!");
@@ -90,7 +90,7 @@ function checkPass(){
 }
 
 function shakeSignup(){
-	var shakeoptions = {  distance: 10, times: 6 , direction : 'up' };
+	var shakeoptions = {  distance: 15, times: 4 , direction : 'up' };
 	$("#signup").effect("shake",shakeoptions);
 }
 function shakeit(){
