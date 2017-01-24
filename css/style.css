@@ -149,8 +149,10 @@ body {
 }
 #signup-text {
   font-size: 20px;
-  margin: 20px;
+  margin: 20px auto;
   font-family: 'Harrington';
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .modal-body p{
@@ -236,8 +238,6 @@ a {
 
   #signup-text {
     font-size: 24px;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 
   #secretdiv {
