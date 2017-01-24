@@ -90,7 +90,7 @@ function checkPass(){
 }
 
 function shakeSignup(){
-	var shakeoptions = {  distance: 15, times: 4 , direction : 'up' };
+	var shakeoptions = {  distance: 45, times: 2 , direction : 'up' };
 	$("#signup").effect("shake",shakeoptions);
 }
 function shakeit(){
