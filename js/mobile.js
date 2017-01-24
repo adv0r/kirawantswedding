@@ -4,6 +4,15 @@ var maxAlpha = 90;
 
 function initMobile(){
 	if (window.DeviceOrientationEvent) {
+		window.addEventListener("orientationchange", function() {
+		  // Announce the new orientation number
+		    alert(window.orientation);
+			if(window.innerHeight > window.innerWidth){
+			    alert("Please use Landscape!");
+			}
+		}, false);
+
+
     if (/Android|webOS|iPhone|iPad|BlackBerry|Windows Phone|Opera Mini|IEMobile|Mobile/i.test(navigator.userAgent)) {
       $("#dogeyeleft").hide();
       $("#dogeyeright").hide();
