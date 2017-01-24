@@ -4,17 +4,6 @@ var maxAlpha = 90;
 
 function initMobile(){
 	if (window.DeviceOrientationEvent) {
-		if(window.innerHeight < window.innerWidth){
-			    alert("Please use Portrait!");
-			}
-
-		window.addEventListener("orientationchange", function() {
-		  // Announce the new orientation number
-			if(window.innerHeight < window.innerWidth){
-			    alert("Please use Portrait!");
-			}
-		}, false);
-
 
     if (/Android|webOS|iPhone|iPad|BlackBerry|Windows Phone|Opera Mini|IEMobile|Mobile/i.test(navigator.userAgent)) {
       $("#dogeyeleft").hide();
