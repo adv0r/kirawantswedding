@@ -81,7 +81,6 @@ body {
 #secretdiv {
   /* visibility: hidden; */
   display: none;
-  max-height: 100vh;
 }
 .img {
   display: flex;
@@ -236,6 +235,10 @@ a {
     font-size: 24px;
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  #secretdiv {
+    max-height: 100vh;
   }
 }
 
