@@ -92,11 +92,13 @@ body {
 .img img{
   display: block;
   max-width: 100%;
-  max-height: 70vh;
+  max-height: 65vh;
 }
 
 .img-container {
   position: relative;
+  z-index: 10;
+  padding: 20px 0;
 }
 
 #pupilleft,
@@ -199,6 +201,11 @@ body {
 a {
   color: blue;
   text-decoration: underline;
+}
+
+#welcometext {
+  position: relative;
+  z-index: 20;
 }
 /*
 * RESPONSIVE
