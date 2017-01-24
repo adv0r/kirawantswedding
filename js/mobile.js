@@ -4,8 +4,11 @@ var maxAlpha = 90;
 
 function initMobile(){
 	if (window.DeviceOrientationEvent) {
-		$("#dogeyeleft").hide();
-		$("#dogeyeright").hide();
+    if (/Android|webOS|iPhone|iPad|BlackBerry|Windows Phone|Opera Mini|IEMobile|Mobile/i.test(navigator.userAgent)) {
+      $("#dogeyeleft").hide();
+      $("#dogeyeright").hide();
+    }
+
 	  	window.addEventListener('deviceorientation', function(eventData) {
 	    // gamma is the left-to-right tilt in degrees, where right is positive
 	    var tiltLR = eventData.gamma;
@@ -16,7 +19,7 @@ function initMobile(){
 	    // call our orientation event handler
 	    deviceOrientationHandler(tiltLR, 0, dir);
 	  }, false);
-	} 
+	}
 }
 
 
