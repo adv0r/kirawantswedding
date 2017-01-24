@@ -144,6 +144,9 @@ body {
   display: none;
 }
 
+#signup {
+  margin-bottom: 100px;
+}
 #signup-text {
   font-size: 20px;
   margin: 20px auto;
@@ -239,6 +242,10 @@ a {
 
   #secretdiv {
     max-height: 100vh;
+  }
+
+  #signup {
+    margin-bottom: 60px;
   }
 }
 
