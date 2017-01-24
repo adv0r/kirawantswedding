@@ -2,22 +2,13 @@ var lastAppliedTilt = 0;
 var minTilt = 6;
 var maxAlpha = 90;
 
-
-$( document ).ready(function() {
-  initMobile();
-});
-
-
 function initMobile(){
 	if (window.DeviceOrientationEvent) {
-	  //document.getElementById("doEvent").innerHTML = "DeviceOrientation";
-	  // Listen for the deviceorientation event and handle the raw data
-	  window.addEventListener('deviceorientation', function(eventData) {
+		$("#dogeyeleft").hide();
+		$("#dogeyeright").hide();
+	  	window.addEventListener('deviceorientation', function(eventData) {
 	    // gamma is the left-to-right tilt in degrees, where right is positive
 	    var tiltLR = eventData.gamma;
-
-	    // beta is the front-to-back tilt in degrees, where front is positive
-	    var tiltFB = 0;
 
 	    // alpha is the compass direction the device is facing in degrees
 	    var dir = eventData.alpha
@@ -25,24 +16,13 @@ function initMobile(){
 	    // call our orientation event handler
 	    deviceOrientationHandler(tiltLR, 0, dir);
 	  }, false);
-	} else {
-	  //document.getElementById("doEvent").innerHTML = "Not supported."
-	}
+	} 
 }
 
 
 function deviceOrientationHandler(tiltLR, tiltFB, dir){
-	//document.getElementById("doTiltLR").innerHTML = Math.round(tiltLR);
-	//document.getElementById("doTiltFB").innerHTML = Math.round(tiltFB);
-
-	//document.getElementById("doDirection").innerHTML = Math.round(lastAppliedTilt);
-
-
 	if(Math.abs(lastAppliedTilt - tiltLR)>minTilt) {
 		if(tiltLR > -40 && tiltLR < 40){
-			$("#dogeyeleft").hide();
-			$("#dogeyeright").hide();
-
 			lastAppliedTilt = tiltLR;
 			tiltLR = tiltLR/2; //reduce rotation
 			var logo = document.getElementById("rotatingImg");
@@ -51,15 +31,4 @@ function deviceOrientationHandler(tiltLR, tiltFB, dir){
 		  }
 
 	}
-	// Apply the transform to the image
-
-
-	// Parameters below only work in portait mode!!!
-
-	// Occhi In posizione centrale  tiltLR : 0 , tiltFB : 50
-	// Occhi max a destra : tiltLR > 40
-	// Occhi max a sinistra : tiltLR < -40
-	// Occhi in alto : tiltFB > 80
-	// Occhi in basso : tiltFB < 25
-
 }

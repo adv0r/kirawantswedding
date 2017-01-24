@@ -2,10 +2,11 @@
 'use strict';
 
 $( document ).ready(function() {
+  initMobile();
+  
   var chihuahuaeye1 = new DrawEye("#dogeyeleft", "#dogpupilleft");
   var chihuahuaeye2 = new DrawEye("#dogeyeright", "#dogpupilright");
 
-  //TODO here add code to check mobile
   setTimeout(function(){
           var shakeoptions = {  distance: 10, times: 6 , direction : 'down' };
         $("#personalcodediv").effect("shake",shakeoptions);
