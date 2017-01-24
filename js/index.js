@@ -3,7 +3,7 @@
 
 $( document ).ready(function() {
   initMobile();
-  
+
   var chihuahuaeye1 = new DrawEye("#dogeyeleft", "#dogpupilleft");
   var chihuahuaeye2 = new DrawEye("#dogeyeright", "#dogpupilright");
 
@@ -30,6 +30,8 @@ $( document ).ready(function() {
         var shakeoptions = {  distance: 40, times: 1 };
         $("#sunbtn").effect("shake",shakeoptions);
         $('#personalcodeinput').blur();
+        $('#sunbtn').focus();
+
         //$("#sunbtn").toggle("highlight");
         //setTimeout(function(){ $("#sunbtn" ).toggle("highlight"); } , 400);
 
