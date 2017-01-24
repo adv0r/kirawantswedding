@@ -147,6 +147,7 @@ body {
 
 #signup {
   margin-bottom: 100px;
+  padding: 20px;
 }
 #signup-text {
   font-size: 20px;
@@ -247,7 +248,6 @@ a {
 
   #signup {
     margin-bottom: 60px;
-    padding: 20px;
   }
 }
 
