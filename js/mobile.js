@@ -6,7 +6,6 @@ function initMobile(){
 	if (window.DeviceOrientationEvent) {
 		window.addEventListener("orientationchange", function() {
 		  // Announce the new orientation number
-		    alert(window.orientation);
 			if(window.innerHeight > window.innerWidth){
 			    alert("Please use Landscape!");
 			}
