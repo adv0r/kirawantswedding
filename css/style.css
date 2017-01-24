@@ -165,6 +165,9 @@ body {
   max-width: 600px;
   line-height: 1.2;
   font-family: 'Harrington';
+  padding-left: 10px;
+  padding-right: 10px;
+
 }
 
 .modal-title, .modal-body {
@@ -231,5 +234,7 @@ a {
 
   #signup-text {
     font-size: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
