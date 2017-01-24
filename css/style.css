@@ -149,8 +149,8 @@ body {
 }
 #signup-text {
   font-size: 20px;
-  margin: 20px auto;
-  font-family: 'Harrington'
+  margin: 20px;
+  font-family: 'Harrington';
 }
 
 .modal-body p{
