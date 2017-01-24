@@ -49,6 +49,7 @@ $( document ).ready(function() {
 function hideSignup(){
   $("#signup").hide();
   $("#welcome-text").hide();
+  $(".img img").css({'max-height': '90vh'});
 }
 
 var DrawEye = function(eyecontainer, pupil){
