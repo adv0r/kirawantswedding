@@ -36,6 +36,8 @@ function initMobile(){
 
 
 function deviceOrientationHandler(tiltLR, tiltFB, dir){
+	//Debug
+	('#welcome-text').text(tiltLR);
 	if(Math.abs(lastAppliedTilt - tiltLR)>minTilt) {
 		if(tiltLR > -40 && tiltLR < 40){
 			lastAppliedTilt = tiltLR;
