@@ -34,7 +34,7 @@ function checkPass(){
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='multi'){
 			   $("#welcome-text").html("<p class='welcome'>Ciao <span id='customtext'> </span>, volete condividere con me questo giorno speciale per Gemma e Nico?</p>");
-			   $("#signup-text").html("Lasciatemi il vostro indirizzo email qui sotto &darr; e vi terrò aggiornati");
+			   $("#signup-text").html("Lasciatemi il vostro indirizzo email ⇩ qui sotto ⇩ e vi terrò aggiornati");
 			}
 
 			$("#modaltitle").text("Perfetto!");
