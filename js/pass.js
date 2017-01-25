@@ -66,15 +66,15 @@ function checkPass(){
 		else if(codeTable[pass1.toUpperCase()][1]=='cat'){
 			if(codeTable[pass1.toUpperCase()][2]=='male'){
 			   $("#welcome-text").html("<p class='welcome'>Hola <span id='customtext'> </span>, vols compartir amb mi aquest dia tan especial per la Gemma i el Nico?</p>");
-			   $("#signup-text").html("Deixa'm un email aquí a baix &darr; i te mantindré informat");
+			   $("#signup-text").html("Deixa'm un email aquí sota &darr; i te mantindré informat");
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='female'){
 			   $("#welcome-text").html("<p class='welcome'>Hola <span id='customtext'> </span>, vols compartir amb mi aquest dia tan especial per la Gemma i el Nico?</p>");
-			   $("#signup-text").html("Deixa'm un email aquí a baix &darr; i te mantindré informada");
+			   $("#signup-text").html("Deixa'm un email aquí sota &darr; i te mantindré informada");
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='multi'){
 			   $("#welcome-text").html("<p class='welcome'>Hola <span id='customtext'> </span>, voleu compartir amb mi aquest dia tan especial per la Gemma i el Nico?</p>");
-			   $("#signup-text").html("Deixeu-me els vostres emails aquí a baix &darr; i us mantindré informats");
+			   $("#signup-text").html("Deixeu-me els vostres emails aquí sota &darr; i us mantindré informats");
 			}
 
 			$("#modaltitle").text("Perfecte!");
