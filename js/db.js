@@ -60,7 +60,7 @@ var codeTable =  {
 	RINXOLSVERMELLS : [	'Flavia e Roberto'	, 'ita' ,	'multi'],
 	VERLOBTENBACKTOBCN : [	'Akira e Giorgia'	, 'ita' ,	'multi'],
 	BACKINTOWN : [	'Dan e Anais'	, 'ita' ,	'multi'],
-	ELEANORWANTSBRETZEL : [	'Valerio, Conny e Eleanor'	, 'ita' ,	'multi'],
+	ELEANORWANTSBRETZEL : [	'Valerio, Connie e Eleanor'	, 'ita' ,	'multi'],
 	OSTIAELPORRO : [	'Olio e Laura'	, 'ita' ,	'multi'],
 	ELCIMONDEBARCELONA : [	'Marco, Fede e Viola'	, 'ita' ,	'multi'],
 	IONONMANGIOCHROMEBOOK : [	'Claudia e Simone'	, 'ita' ,	'multi'],
