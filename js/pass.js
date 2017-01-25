@@ -34,7 +34,7 @@ function checkPass(){
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='multi'){
 			   $("#welcome-text").html("<p class='welcome'>Ciao <span id='customtext'> </span>, volete condividere con me questo giorno speciale per Gemma e Nico?</p>");
-			   $("#signup-text").html("Lasciatemi il vostro indirizzo email qui sotto &darr; e vi terr&oacute; aggiornati");
+			   $("#signup-text").html("Lasciatemi i vostri indirizzi email qui sotto &darr; e vi terr&oacute; aggiornati");
 			}
 
 			$("#modaltitle").text("Perfetto!");
@@ -45,22 +45,22 @@ function checkPass(){
 		else if(codeTable[pass1.toUpperCase()][1]=='esp'){
 			if(codeTable[pass1.toUpperCase()][2]=='male'){
 			   $("#welcome-text").html("<p class='welcome'>Hola <span id='customtext'> </span>, ¿quieres compartir conmigo este día tan especial para Gemma y Nico?</p>");
-			   $("#signup-text").html("Dejame un email aquí abajo &darr; y te mantendré informado");
+			   $("#signup-text").html("Dejame un email aquí debajo &darr; y te mantendré informado");
 
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='female'){
 			   $("#welcome-text").html("<p class='welcome'>Hola <span id='customtext'> </span>, ¿quieres compartir conmigo este día tan especial para Gemma y Nico?</p>");
-			   $("#signup-text").html("Dejame un email aquí abajo &darr; y te mantendré informada");
+			   $("#signup-text").html("Dejame un email aquí debajo &darr; y te mantendré informada");
 
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='multi'){
 			   $("#welcome-text").html("<p class='welcome'>Hola <span id='customtext'> </span>, ¿queréis compartir conmigo este día tan especial para Gemma y Nico?</p>");
-   			   $("#signup-text").html("Dejadme vuestros email aquí abajo &darr; y os mantendré informados");
+   			   $("#signup-text").html("Dejadme vuestros emails aquí debajo &darr; y os mantendré informados");
 			}
 
 
 			$("#modaltitle").text("Perfecto!");
-			$("#modalbody").html("<p>Ahora solo hay que estar atento al email, del resto me encargo yo!</p> <p><strong> Kira</strong></p>"+calText);
+			$("#modalbody").html("<p>Ahora solo hay que estar atentos al email, del resto me encargo yo!</p> <p><strong> Kira</strong></p>"+calText);
 			$("#closebtn").text("Hasta pronto!");
 		}
 		else if(codeTable[pass1.toUpperCase()][1]=='cat'){
@@ -74,7 +74,7 @@ function checkPass(){
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='multi'){
 			   $("#welcome-text").html("<p class='welcome'>Hola <span id='customtext'> </span>, voleu compartir amb mi aquest dia tan especial per la Gemma i el Nico?</p>");
-			   $("#signup-text").html("Deixeu-me els vostres email aquí a baix &darr; i us mantindré informats");
+			   $("#signup-text").html("Deixeu-me els vostres emails aquí a baix &darr; i us mantindré informats");
 			}
 
 			$("#modaltitle").text("Perfecte!");
