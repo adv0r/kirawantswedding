@@ -67,7 +67,7 @@ var codeTable =  {
 	OKCLUBVIAHIPPIEPASS : [	'Isacco e Norma'	, 'ita' ,	'multi'],
 	INFELTRATI : [	'Tobia e Lisa'	, 'ita' ,	'multi'],
 	BRETZELSINLOVE : [	'Lorenzo e Simone'	, 'ita' ,	'multi'],
-	CABINATOCONAMORE : [	'Dario e Lara'	, 'ita' ,	'multi'],
+	FURGONATICONAMORE : [	'Dario e Laura'	, 'ita' ,	'multi'],
 	ARCURICIMANCHI : [	'Eddy e Laura'	, 'ita' ,	'multi'],
 	UN2DIOGNITUTTO : [	'Piro'	, 'ita' ,	'multi'],
 	FEELGOOD : [	'Stefy'	, 'ita' ,	'female'],
