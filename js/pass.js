@@ -21,6 +21,17 @@ function checkPass(){
 		setTimeout(function(){shakeSignup();}, 8000);
 		setTimeout(function(){shakeSignup();}, 10000);
 
+		  /*
+		   * Here we'll just wire up the event listener
+		   */
+		  document.getElementById('ajaxSubmit').addEventListener('click', function(e) {
+		    setTimeout(function(){
+		        var tadaAudio = new Audio('audio/tada_tada.mp3');
+		        tadaAudio.play();
+		        }
+		      , 600);
+		  }, true);
+
 		var calText = "<hr/> <p align='right'>Save the date <img src='img/calendar-128.png' width='24px'>  (<a href='cal/Kira-Wants-Wedding.ics'>iCal</a> | <a href='https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NHVrYmo3M3NpbTIxdmRlajU4bWNiZ3FhYmcgM2M0dTJsOTg3NXZhY2dub2VqanVjZmFyc3NAZw&tmsrc=3c4u2l9875vacgnoejjucfarss%40group.calendar.google.com'>Google Calendar</a>)</p>";
 		if(codeTable[pass1.toUpperCase()][1]=='ita'){
 			if(codeTable[pass1.toUpperCase()][2]=='male'){
