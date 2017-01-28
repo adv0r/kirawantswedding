@@ -58,6 +58,7 @@ var codeTable =  {
 	VENTFORTTRAFICFLUID : [	'Mirza'	, 'ita' ,	'female'],
 	FRITASCONGELADAS : [	'Vale'	, 'ita' ,	'female'],
 	RINXOLSVERMELLS : [	'Flavia e Roberto'	, 'ita' ,	'multi'],
+	LASTRADABIANCA : [	'Andrea e Claudia'	, 'ita' ,	'multi'],
 	VERLOBTENBACKTOBCN : [	'Akira e Giorgia'	, 'ita' ,	'multi'],
 	BACKINTOWN : [	'Dan e Anais'	, 'ita' ,	'multi'],
 	ELEANORWANTSBRETZEL : [	'Valerio, Connie e Eleanor'	, 'ita' ,	'multi'],
