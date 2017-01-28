@@ -48,7 +48,7 @@ var codeTable =  {
 	NOSINMIVWT3 : [	'Victor'	, 'cat' ,	'male'],
 	AIAIAIPARTENDIRECTE : [	'Maite, Pitu i MiniPitu'	, 'cat' ,	'multi'],
 	TRIGORIASURMER : [	'Cicco ed Eva'	, 'ita' ,	'multi'],
-	ACAPULCOBARCELLONA : [	'Mattia ed Alesandra'	, 'ita' ,	'multi'],
+	ACAPULCOBARCELLONA : [	'Mattia ed Alessandra'	, 'ita' ,	'multi'],
 	ELSENSEIMORENO : [	'Manu'	, 'ita' ,	'male'],
 	MERCEDESCLIMBERS : [	'Mario e Isabell'	, 'ita' ,	'multi'],
 	GENITORIPIONEROS : [	'Andrea, Francesa e Bianca'	, 'ita' ,	'multi'],
