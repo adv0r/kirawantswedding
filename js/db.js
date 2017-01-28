@@ -11,7 +11,7 @@ var codeTable =  {
 	QUOVAMOS : [	'Zio Alesandro e Zia Patrizia'	, 'ita' ,	'multi'],
 	LARGHICAPPUCCI : [	'Zio Fabrizio, Zia Iliana e Giorgia'	, 'ita' ,	'multi'],
 	SUPERCUGGI : [	'Giulia e Guglielmo'	, 'ita' ,	'multi'],
-	SUPERKIKKA : [	'Zia Francesca e Ale'	, 'ita' ,	'multi'],
+	RAPPERSDIVIAFAITI : [	'Zia Francesca e Ale'	, 'ita' ,	'multi'],
 	PORTOSANTOSTEFANO : [	'Zia Diana e Zio Nicola'	, 'ita' ,	'multi'],
 	ZIACARMEN : [	'Zia Carmen'	, 'ita' ,	'female'],
 	SPETZLECONRAFANO : [	'Zio Rolando e Zia Carmen'	, 'ita' ,	'multi'],
