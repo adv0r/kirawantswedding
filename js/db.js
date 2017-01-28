@@ -39,7 +39,7 @@ var codeTable =  {
 	WEEKENDTHERAPISTS : [	'Edgar i Edurne'	, 'cat' ,	'multi'],
 	ALPENEDESESTENCA : [	'Alba i Jordi'	, 'cat' ,	'multi'],
 	AOUNPOPI : [	'Blanca'	, 'cat' ,	'female'],
-	FENTBIRRESFENTBARRI : [	'Puche y Marta',	'esp'	, 'multi'],
+	NOSINMIBALLANTINES : [	'Puche y Marta',	'esp'	, 'multi'],
 	BBQKINGS : [	'Joan y Noe',	'esp'	, 'multi'],
 	DONDEESTARAMICARRO : [	'Ventur'	, 'cat' ,	'female'],
 	WENEEDHELP : [	'Roca'	, 'cat' ,	'male'],
