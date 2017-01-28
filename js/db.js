@@ -9,7 +9,7 @@ var codeTable =  {
 	SASISASISASISU : [	'Flamy e Valerio'	, 'ita' ,	'multi'],
 	NONNATECNOLOGICA : [	'Nonnna Brunella'	, 'ita' ,	'female'],
 	QUOVAMOS : [	'Zio Alesandro e Zia Patrizia'	, 'ita' ,	'multi'],
-	STRETTOCAPPUCCI : [	'Zio Fabrizio, Zia Iliana e Giorgia'	, 'ita' ,	'multi'],
+	LARGHICAPPUCCI : [	'Zio Fabrizio, Zia Iliana e Giorgia'	, 'ita' ,	'multi'],
 	SUPERCUGGI : [	'Giulia e Guglielmo'	, 'ita' ,	'multi'],
 	SUPERKIKKA : [	'Zia Francesca e Ale'	, 'ita' ,	'multi'],
 	PORTOSANTOSTEFANO : [	'Zia Diana e Zio Nicola'	, 'ita' ,	'multi'],
