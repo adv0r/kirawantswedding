@@ -45,12 +45,12 @@ function checkPass(){
 		else if(codeTable[pass1.toUpperCase()][1]=='esp'){
 			if(codeTable[pass1.toUpperCase()][2]=='male'){
 			   $("#welcome-text").html("<p class='welcome'>Hola <span id='customtext'> </span>, ¿quieres compartir conmigo este día tan especial para Gemma y Nico?</p>");
-			   $("#signup-text").html("Dejame un email aquí debajo &darr; y te mantendré informado");
+			   $("#signup-text").html("Déjame un email aquí debajo &darr; y te mantendré informado");
 
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='female'){
 			   $("#welcome-text").html("<p class='welcome'>Hola <span id='customtext'> </span>, ¿quieres compartir conmigo este día tan especial para Gemma y Nico?</p>");
-			   $("#signup-text").html("Dejame un email aquí debajo &darr; y te mantendré informada");
+			   $("#signup-text").html("Déjame un email aquí debajo &darr; y te mantendré informada");
 
 			}
 			else if(codeTable[pass1.toUpperCase()][2]=='multi'){

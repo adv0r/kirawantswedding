@@ -21,7 +21,7 @@ var codeTable =  {
 	QUEENOFMANZ : [	'Giulia, Gabriele e Gaby junior'	, 'ita' ,	'multi'],
 	MOUNTAINHERITAGE : [	'Erik e Olivia'	, 'ita' ,	'multi'],
 	SAGRADABIFORA : [	'Zio Dario'	, 'ita' ,	'male'],
-	LAPAELLADELDOMINGO : [	'Mami Maite',	'esp'	, 'female'],
+	LAPAELLADELDOMINGO : [	'Mami Maite',	'cat'	, 'female'],
 	CISABONET : [	'Tieta Maribel y Nacho',	'esp'	, 'multi'],
 	LOSCISACAZORLAMOLAN : [	'Cristian, Sandra, Mauro y Nicolás',	'esp'	, 'multi'],
 	PAMIESFAMILY : [	'Tieta, Tete i MºRosa'	, 'cat' ,	'multi'],
