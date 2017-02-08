@@ -85,6 +85,7 @@ var codeTable =  {
 	LAVAMOSAQUEMAR : [	'Masero',	'esp'	, 'male'],
 	SLIVERQUEEN : [	'Alicia',	'esp'	, 'female'],
 	GREENFIELDATZEN : [	'Carmine e Lara'	, 'ita' ,	'multi'],
+	CANADACONNECTION : [	'Zia Patty'	, 'ita' ,	'multi'],
 	QWE : [	'Francesca e Francesco'	, 'ita' ,	'multi']
 
 };
