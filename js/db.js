@@ -86,6 +86,6 @@ var codeTable =  {
 	SLIVERQUEEN : [	'Alicia',	'esp'	, 'female'],
 	GREENFIELDATZEN : [	'Carmine e Lara'	, 'ita' ,	'multi'],
 	CANADACONNECTION : [	'Zia Patty'	, 'ita' ,	'multi'],
+	LOVUOISAPEREMEGLIODIGIACOMO :  [	'Red, Giulia e Giacomo'	, 'ita' ,'multi'],
 	QWE : [	'Francesca e Francesco'	, 'ita' ,	'multi']
-
 };
